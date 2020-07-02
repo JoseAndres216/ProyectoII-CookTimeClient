@@ -1,0 +1,19 @@
+C:\Users\josue\Documents\GitHub\ProyectoII-CookTime\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.0\MobileClient.csprojAssemblyReference.cache
+C:\Users\josue\Documents\GitHub\ProyectoII-CookTime\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\josue\Documents\GitHub\ProyectoII-CookTime\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.0\Views (UI)\Create.xaml.g.cs
+C:\Users\josue\Documents\GitHub\ProyectoII-CookTime\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.0\Views (UI)\MainFeed.xaml.g.cs
+C:\Users\josue\Documents\GitHub\ProyectoII-CookTime\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.0\Views (UI)\MainPage.xaml.g.cs
+C:\Users\josue\Documents\GitHub\ProyectoII-CookTime\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.0\Views (UI)\Notifications.xaml.g.cs
+C:\Users\josue\Documents\GitHub\ProyectoII-CookTime\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.0\Views (UI)\Profile.xaml.g.cs
+C:\Users\josue\Documents\GitHub\ProyectoII-CookTime\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.0\Views (UI)\Search.xaml.g.cs
+C:\Users\josue\Documents\GitHub\ProyectoII-CookTime\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.0\MobileClient.AssemblyInfoInputs.cache
+C:\Users\josue\Documents\GitHub\ProyectoII-CookTime\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.0\MobileClient.AssemblyInfo.cs
+C:\Users\josue\Documents\GitHub\ProyectoII-CookTime\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.0\MobileClient.csproj.CoreCompileInputs.cache
+C:\Users\josue\Documents\GitHub\ProyectoII-CookTime\MobileClient\MobileClient\MobileClient\bin\Debug\netstandard2.0\MobileClient.deps.json
+C:\Users\josue\Documents\GitHub\ProyectoII-CookTime\MobileClient\MobileClient\MobileClient\bin\Debug\netstandard2.0\MobileClient.dll
+C:\Users\josue\Documents\GitHub\ProyectoII-CookTime\MobileClient\MobileClient\MobileClient\bin\Debug\netstandard2.0\ref\MobileClient.dll
+C:\Users\josue\Documents\GitHub\ProyectoII-CookTime\MobileClient\MobileClient\MobileClient\bin\Debug\netstandard2.0\MobileClient.pdb
+C:\Users\josue\Documents\GitHub\ProyectoII-CookTime\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\josue\Documents\GitHub\ProyectoII-CookTime\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.0\MobileClient.dll
+C:\Users\josue\Documents\GitHub\ProyectoII-CookTime\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.0\ref\MobileClient.dll
+C:\Users\josue\Documents\GitHub\ProyectoII-CookTime\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.0\MobileClient.pdb
