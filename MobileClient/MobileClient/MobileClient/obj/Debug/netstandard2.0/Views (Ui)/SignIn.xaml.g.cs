@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("MobileClient.Views__UI_.SignIn.xaml", "Views (UI)/SignIn.xaml", typeof(global::MobileClient.Views__UI_.Page1))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("MobileClient.Views__UI_.SignIn.xaml", "Views (UI)/SignIn.xaml", typeof(global::MobileClient.Views__UI_.SignIn))]
 
 namespace MobileClient.Views__UI_ {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views (UI)\\SignIn.xaml")]
-    public partial class Page1 : global::Xamarin.Forms.ContentPage {
+    public partial class SignIn : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Page1));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(SignIn));
         }
     }
 }

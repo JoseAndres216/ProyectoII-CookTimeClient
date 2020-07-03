@@ -85,7 +85,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\TitleBlue.png" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MobileClient\MobileClient.csproj">
       <Project>{F0C73616-B85F-4A50-880C-94800B5BDB2A}</Project>

@@ -16,5 +16,15 @@ namespace MobileClient.Views__UI_
         {
             InitializeComponent();
         }
+
+        private void btnSignin_Clicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushModalAsync(new SignIn());
+        }
+
+        private void btnLogin_Clicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushModalAsync(new LogIn());
+        }
     }
 }

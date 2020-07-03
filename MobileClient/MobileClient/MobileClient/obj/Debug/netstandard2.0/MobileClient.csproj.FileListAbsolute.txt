@@ -55,3 +55,6 @@ C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClien
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.0\MobileClient.dll
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.0\ref\MobileClient.dll
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.0\MobileClient.pdb
+C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.0\Views (UI)\LogIn.xaml.g.cs
+C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.0\Views (UI)\SignIn.xaml.g.cs
+C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.0\Views (UI)\StartPage.xaml.g.cs
