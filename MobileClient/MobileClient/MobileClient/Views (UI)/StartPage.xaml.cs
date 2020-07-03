@@ -24,7 +24,7 @@ namespace MobileClient.Views__UI_
 
         private void btnLogin_Clicked(object sender, EventArgs e)
         {
-            this.Navigation.PushModalAsync(new LogIn());
+            this.Navigation.PushModalAsync(new MainPage());
         }
     }
 }

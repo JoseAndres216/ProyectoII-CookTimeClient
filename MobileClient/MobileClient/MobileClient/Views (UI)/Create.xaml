@@ -6,12 +6,31 @@
              mc:Ignorable="d"
              x:Class="MobileClient.Views__UI_.Create"
              Title="Create"
-             IconImageSource="add.png">
+             IconImageSource="add.png"
+             BackgroundColor="#0D1218">
+    
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Here is where you will create new recipes and companies!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Orientation="Vertical" Spacing="20" Scale="0.9">
+            <Image Source="TitleBlue.png" VerticalOptions="Start" HorizontalOptions="Start" Scale="0.5"/>
+            <Entry x:Name="txbRecipeName" Keyboard="Default" FontSize="Small" Placeholder="Recipe name" BackgroundColor="#EFEFEF"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
+                <Entry x:Name="txbEstimatedTime" Keyboard="Default" FontSize="Small" Placeholder="Estimated time" BackgroundColor="#EFEFEF" WidthRequest="150"/>
+                <Entry x:Name="txbServings" Keyboard="Telephone" FontSize="Small" Placeholder="Servings" BackgroundColor="#EFEFEF"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="20">
+                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Spacing="20">
+                    <Label Text="Dish Type" TextColor="#EFEFEF" FontSize="Medium" HorizontalTextAlignment="Center"/>
+                    <Picker x:Name="pckDishType" BackgroundColor="#EFEFEF" WidthRequest="150" FontSize="Small"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Spacing="20">
+                    <Label Text="Time of day" TextColor="#EFEFEF" FontSize="Medium" HorizontalTextAlignment="Center"/>
+                    <Picker x:Name="pckTimeofday" BackgroundColor="#EFEFEF" WidthRequest="150" FontSize="Small"/>
+                </StackLayout>
+            </StackLayout>
+            <Label Text="Difficulty" TextColor="#EFEFEF" FontSize="Medium" HorizontalTextAlignment="Start"/>
+            <Picker x:Name="pckDifficulty" BackgroundColor="#EFEFEF" WidthRequest="200" FontSize="Small"/>
+            <Entry x:Name="txbIngredients" Keyboard="Default" FontSize="Small" Placeholder="Ingredients" BackgroundColor="#EFEFEF"/>
+            <Entry x:Name="txbPreparation" Keyboard="Default" FontSize="Small" Placeholder="Preparation" BackgroundColor="#EFEFEF"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

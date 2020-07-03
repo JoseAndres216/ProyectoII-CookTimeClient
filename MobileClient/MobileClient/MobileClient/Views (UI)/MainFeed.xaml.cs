@@ -13,11 +13,11 @@ namespace MobileClient.Views__UI_
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainFeed : ContentPage
     {
-        PostVM vM;
+        RecipeVM vM;
         public MainFeed()
         {
             InitializeComponent();
-            vM = new PostVM();
+            vM = new RecipeVM();
             ListPosts.ItemsSource = vM.Posts;
         }
     }

@@ -8,14 +8,17 @@
              Title="Feed"
              IconImageSource="feed.png">
     <ContentPage.Content>
-        <ListView x:Name="ListPosts">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextCell Text="{Binding Name}" TextColor="Black"
-                              Detail="{Binding User}" DetailColor="Black"/>
-                   
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+        <StackLayout Orientation="Vertical">
+            <Image Source="TitleBlue.png" VerticalOptions="Start" HorizontalOptions="Center" Scale="0.5"/>
+            <ListView x:Name="ListPosts" HorizontalOptions="Center">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Name}" TextColor="#EFEFEF"
+                              Detail="{Binding User}" DetailColor="#EFEFEF"/>
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

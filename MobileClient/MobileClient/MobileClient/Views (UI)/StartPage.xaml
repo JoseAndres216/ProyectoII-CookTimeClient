@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="MobileClient.Views__UI_.StartPage" BackgroundColor="#0D1218">
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center">
+        <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center" Spacing="30">
             <Image Source="TitleBlue.png" Scale="0.8"/>
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="30">
                 <Button x:Name="btnLogin" HorizontalOptions="Center" BackgroundColor="#EFEFEF" Text="Log in" FontSize="Medium" TextColor="#0D1218" Clicked="btnLogin_Clicked"/>
