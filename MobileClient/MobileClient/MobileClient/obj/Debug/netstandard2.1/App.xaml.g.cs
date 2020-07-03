@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("MobileClient.App.xaml", "App.xaml", typeof(global::MobileClient.App))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("CookTime.App.xaml", "App.xaml", typeof(global::MobileClient.App))]
 
 namespace MobileClient {
     

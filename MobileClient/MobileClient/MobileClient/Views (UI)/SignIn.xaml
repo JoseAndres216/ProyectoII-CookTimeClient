@@ -4,12 +4,19 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="MobileClient.Views__UI_.SignIn">
+             x:Class="MobileClient.Views__UI_.SignIn"
+             BackgroundColor="#0D1218">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="This is the sign in page"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center" Spacing="30">
+            <Image Source="TitleBlue.png" Scale="0.8"/>
+            <Entry x:Name="txbEmail" Keyboard="Email" FontSize="Medium" Placeholder="Email" BackgroundColor="#EFEFEF" ScaleX="0.8" ScaleY="1.2"/>
+            <Entry x:Name="txbUsername" Keyboard="Default" FontSize="Medium" Placeholder="Username" BackgroundColor="#EFEFEF" ScaleX="0.8" ScaleY="1.2"/>
+            <Entry x:Name="txbPassword" Keyboard="Default" FontSize="Medium" Placeholder="Password" BackgroundColor="#EFEFEF" IsPassword="True" ScaleX="0.8" ScaleY="1.2"/>
+            <Entry x:Name="txbPasswordConfrmation" Keyboard="Default" FontSize="Medium" Placeholder="Confirm password" BackgroundColor="#EFEFEF" IsPassword="True" ScaleX="0.8" ScaleY="1.2"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="40">
+                <Button x:Name="btnBack" Text="Back" FontSize="Medium" Clicked="btnBack_Clicked"/>
+                <Button x:Name="btnSignIn" Text="Sign In" FontSize="Medium" Clicked="btnSignIn_Clicked"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

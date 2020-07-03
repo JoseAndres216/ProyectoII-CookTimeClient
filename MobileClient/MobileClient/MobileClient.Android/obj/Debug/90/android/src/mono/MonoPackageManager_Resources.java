@@ -3,8 +3,8 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "MobileClient.Android.dll" comes first in this list. */
 		"MobileClient.Android.dll",
+		"CookTime.dll",
 		"FormsViewGroup.dll",
-		"MobileClient.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Core.Runtime.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",
@@ -47,7 +47,6 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
-		"CookTime.dll",
 	};
 	public static String[] Dependencies = new String[]{
 	};

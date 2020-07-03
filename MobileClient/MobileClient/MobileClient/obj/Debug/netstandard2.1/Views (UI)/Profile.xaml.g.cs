@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("MobileClient.Views__UI_.Profile.xaml", "Views (UI)/Profile.xaml", typeof(global::MobileClient.Views__UI_.Profile))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("CookTime.Views__UI_.Profile.xaml", "Views (UI)/Profile.xaml", typeof(global::MobileClient.Views__UI_.Profile))]
 
 namespace MobileClient.Views__UI_ {
     
