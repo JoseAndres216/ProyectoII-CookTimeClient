@@ -1,11 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "6U4Km0/tcHi2c1QFCSdvSlOPpnDr64Yl9a18J9saGvYd+olz8/du6darlhvGYq7BAW6EFsuJ1P8IcdK50B6mfA==",
+  "dgSpecHash": "yr4J49jUw+FoA3iOxNRRmgOhmxb6w0qD57Q8kkSC8tJpwWptrpncFlWFSnjdRbrkxGC3KHf8JyK9NMzOykimXg==",
   "success": true,
   "projectFilePath": "C:\\Users\\JoseAndresApps\\Proyectos\\CookTimeClient\\Codigo\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj",
   "expectedPackageFiles": [
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\Jose Andrés\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.5.0.495\\xamarin.forms.4.5.0.495.nupkg.sha512"

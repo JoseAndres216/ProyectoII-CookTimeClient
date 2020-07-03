@@ -800,18 +800,18 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "MobileClient/1.0.0": {
+      "CookTime/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
+        "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.5.0.495"
         },
         "compile": {
-          "bin/placeholder/MobileClient.dll": {}
+          "bin/placeholder/CookTime.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MobileClient.dll": {}
+          "bin/placeholder/CookTime.dll": {}
         }
       }
     }
@@ -1955,7 +1955,7 @@
         "xamarin.forms.nuspec"
       ]
     },
-    "MobileClient/1.0.0": {
+    "CookTime/1.0.0": {
       "type": "project",
       "path": "../MobileClient/MobileClient.csproj",
       "msbuildProject": "../MobileClient/MobileClient.csproj"
@@ -1963,7 +1963,7 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v9.0": [
-      "MobileClient >= 1.0.0",
+      "CookTime >= 1.0.0",
       "Xamarin.Essentials >= 1.3.1",
       "Xamarin.Forms >= 4.5.0.495"
     ]

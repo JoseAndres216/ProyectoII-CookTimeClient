@@ -5,8 +5,8 @@
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-  <application android:label="MobileClient.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true">
-    <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="MobileClient" android:theme="@style/MainTheme" android:name="crc64106170318bdb017a.MainActivity">
+  <application android:label="MobileClient.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/appicon" android:debuggable="true">
+    <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/appicon" android:label="CookTime" android:theme="@style/MainTheme" android:name="crc64106170318bdb017a.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
