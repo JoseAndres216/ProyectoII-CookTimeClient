@@ -10,12 +10,40 @@
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
             <Image Source="TitleBlue.png" VerticalOptions="Start" HorizontalOptions="Center" Scale="0.5"/>
-            <ListView x:Name="ListPosts" HorizontalOptions="Center">
+            <ListView x:Name="ListPosts" HorizontalOptions="Center" 
+                      
+HasUnevenRows="True" SeparatorVisibility="None">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding Name}" TextColor="#EFEFEF"
-                              Detail="{Binding User}" DetailColor="#EFEFEF"/>
+                        <ViewCell>
+                            <Grid Padding="10" RowSpacing="10" ColumnSpacing="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Image HeightRequest="60"
+                                       HorizontalOptions="CenterAndExpand"
+                                       VerticalOptions="CenterAndExpand"
+                                       Aspect="AspectFill"
+                                       WidthRequest="66"
+                                       Grid.RowSpan="2"
+                                       Source="{Binding Image}"/>
+                                <Label Grid.Column="1"
+                                       Text="{Binding Name}"
+                                       TextColor="White"
+                                       VerticalOptions="End"/>
+                                <Label Grid.Row="1"
+                                       Grid.Column="1"
+                                       VerticalOptions="Start"
+                                       Text="{Binding User}"
+                                       TextColor="White"/>
 
+                            </Grid>
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

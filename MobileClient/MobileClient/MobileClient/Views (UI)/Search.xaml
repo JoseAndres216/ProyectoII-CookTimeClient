@@ -8,10 +8,16 @@
              Title="Search"
              IconImageSource="search.png">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Searching for search"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Spacing="4" Padding="12">
+            <SearchBar Placeholder="What recipe are you looking for?" BackgroundColor="#EFEFEF" CancelButtonColor="Gray"/>
+            <ListView x:Name="RecommendationList" HorizontalOptions="Center">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Name}" TextColor="#EFEFEF"
+                              Detail="{Binding User}" DetailColor="#EFEFEF"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

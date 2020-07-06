@@ -485,8 +485,6 @@ C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileCli
 C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\bin\Debug\com.companyname.mobileclient.aab
 C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\bin\Debug\com.companyname.mobileclient-Signed.aab
 C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\bin\Debug\com.companyname.mobileclient-Signed.apk
-C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\bin\Debug\MobileClient.dll
-C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\bin\Debug\MobileClient.pdb
 C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
 C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\build.props
 C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\adb.props
@@ -556,8 +554,6 @@ C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileCli
 C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\Java.Interop.dll
 C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\MobileClient.Android.dll
 C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\MobileClient.Android.pdb
-C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\MobileClient.dll
-C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\MobileClient.pdb
 C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\Mono.Android.dll
 C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\Mono.Android.pdb
 C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\Mono.Security.dll
@@ -1448,3 +1444,12 @@ C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClien
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\res\mipmap-xhdpi\appicon.png
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\res\mipmap-xxhdpi\appicon.png
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\res\mipmap-xxxhdpi\appicon.png
+C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\bin\Debug\CookTime.dll
+C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\bin\Debug\CookTime.pdb
+C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\res\drawable\titleblue.png
+C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\res\mipmap-hdpi\appicon.png
+C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\res\mipmap-xhdpi\appicon.png
+C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\res\mipmap-xxhdpi\appicon.png
+C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\res\mipmap-xxxhdpi\appicon.png
+C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\CookTime.dll
+C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\CookTime.pdb
