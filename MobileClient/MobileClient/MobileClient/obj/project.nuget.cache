@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "rqxopBJecc8yW0yn/D0skdsYH5+JugPCu7kjixCPY4eu3vKj18ePHr0ABEhaO9+659PHDIrf8qzCWn14Yn/IRg==",
+  "dgSpecHash": "H6d52W/pwsQyP/QsGYSZFTzr7QAIO4AtJr+gdZSxtG1KuRr2hWzZAPbkk2zHyKSPuIsakmfgjQvzn8IreNGD0Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\JoseAndresApps\\Proyectos\\CookTimeClient\\Codigo\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Jose Andrés\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\Jose Andrés\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Users\\Jose Andrés\\.nuget\\packages\\xamarin.forms\\4.7.0.1080\\xamarin.forms.4.7.0.1080.nupkg.sha512"
+    "C:\\Users\\Admin\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\xamarin.forms\\4.7.0.1080\\xamarin.forms.4.7.0.1080.nupkg.sha512"
   ],
   "logs": []
 }

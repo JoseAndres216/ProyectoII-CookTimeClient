@@ -16,5 +16,22 @@ namespace MobileClient.Views__UI_
         {
             InitializeComponent();
         }
+        private async void btnBack_Clicked(object sender, EventArgs e)
+        {
+            await this.Navigation.PopModalAsync();
+        }
+
+        private async void btnLogIn_Clicked(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txbUsername.Text) && !string.IsNullOrWhiteSpace(txbPassword.Text))
+            {
+                await Navigation.PushModalAsync(new MainPage());
+
+            }
+            else
+            {
+                await DisplayAlert("Not that fast", "You have to complete all the blanks, go back and complete them", "OK");
+            }
+        }
     }
 }
