@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CookTime.Views__UI_.PostInfo"
+             BackgroundColor="#0D1218">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image x:Name="postImage" HeightRequest="100" WidthRequest="100"/>
+            <Label x:Name="postName" Text = "" TextColor="White" FontSize="Medium" HorizontalTextAlignment="Center"/>
+            <ScrollView Orientation="Vertical" BackgroundColor="#efefef" >
+                <StackLayout>
+                    <Label x:Name="postUser" Text = "" TextColor="Black" Margin="20, 10" FontSize="Medium"/>
+                    <Label x:Name="postType" Text="" TextColor="Black" Margin="20, 10" FontSize="Medium"/>
+                    <Label x:Name="postDuration" Text="" TextColor="Black" Margin="20, 10" FontSize="Medium"/>
+                    <Label x:Name="postDifficulty" Text="" TextColor="Black" Margin="20, 10" FontSize="Medium"/>
+                    <Label x:Name="postIngredients" Text="" TextColor="Black" Margin="20, 10" FontSize="Medium"/>
+                    <Label x:Name="postSteps" Text="" TextColor="Black" Margin="20, 10" FontSize="Medium"/>
+                </StackLayout>
+            </ScrollView>
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

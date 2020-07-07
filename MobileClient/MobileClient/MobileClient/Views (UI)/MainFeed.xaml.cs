@@ -1,9 +1,7 @@
-﻿using MobileClient.ViewModel__Abstract_UI_;
+﻿using CookTime.Views__UI_;
+using MobileClient.Model__Logic_;
+using MobileClient.ViewModel__Abstract_UI_;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -19,6 +17,17 @@ namespace MobileClient.Views__UI_
             InitializeComponent();
             vM = new RecipeVM();
             ListPosts.ItemsSource = vM.Posts;
+        }
+        private async void itemSelected(Object sender, ItemTappedEventArgs e)
+        {
+            var details = e.Item as Recipe;
+            await this.Navigation.PushModalAsync(new PostInfo(details.Name, details.User, details.Type, details.Duration,
+                details.Difficulty, details.Ingredients, details.Steps, details.Image));
+        }
+
+        private void ListPosts_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+
         }
     }
 }

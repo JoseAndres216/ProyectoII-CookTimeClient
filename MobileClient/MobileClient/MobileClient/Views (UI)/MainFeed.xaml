@@ -11,8 +11,9 @@
         <StackLayout Orientation="Vertical">
             <Image Source="TitleBlue.png" VerticalOptions="Start" HorizontalOptions="Center" Scale="0.5"/>
             <ListView x:Name="ListPosts" HorizontalOptions="Center" 
-                      
-HasUnevenRows="True" SeparatorVisibility="None">
+                      HasUnevenRows="True" 
+                      SeparatorVisibility="None"
+                      ItemTapped="itemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
