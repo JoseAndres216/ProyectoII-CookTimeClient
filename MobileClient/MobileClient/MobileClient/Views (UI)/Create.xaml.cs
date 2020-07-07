@@ -31,5 +31,15 @@ namespace MobileClient.Views__UI_
             pckDifficulty.Items.Add("Average chef");
             pckDifficulty.Items.Add("Master Chef Costa Rica");
         }
+
+        private void btnPost_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPicture_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -31,12 +31,14 @@
             <Picker x:Name="pckDifficulty" BackgroundColor="#EFEFEF" WidthRequest="200" FontSize="Small"/>
             <Entry x:Name="txbIngredients" Keyboard="Default" FontSize="Small" Placeholder="Ingredients" BackgroundColor="#EFEFEF"/>
             <Entry x:Name="txbPreparation" Keyboard="Default" FontSize="Small" Placeholder="Preparation" BackgroundColor="#EFEFEF"/>
-            <StackLayout Orientation="Horizontal" Spacing="20">
+            <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="CenterAndExpand">
                 <StackLayout Orientation="Vertical" Spacing="20">
-                    <Button x:Name="btnPicture" BackgroundColor="#EFEFEF" Text="Shot it!"/>
+                    <Entry x:Name="txbImageDir" IsEnabled="False" BackgroundColor="#EFEFEF" FontSize="Small" WidthRequest="200"/>
+                    <Button x:Name="btnPicture" BackgroundColor="#EFEFEF" Text="Select Image" Clicked="btnPicture_Clicked"/>
                 </StackLayout>
                 <StackLayout Orientation="Vertical" Spacing="20">
-
+                    <Entry x:Name="txbPrice" Keyboard="Numeric" FontSize="Small" Placeholder="Price" BackgroundColor="#EFEFEF" WidthRequest="200"/>
+                    <Button x:Name="btnPost" BackgroundColor="#EFEFEF" Text="Post it!               " Clicked="btnPost_Clicked"/>
                 </StackLayout>
             </StackLayout>
         </StackLayout>

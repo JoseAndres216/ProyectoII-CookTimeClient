@@ -1438,8 +1438,6 @@ C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClien
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\bin\Debug\CookTime.pdb
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\CookTime.dll
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\CookTime.pdb
-C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\MobileClient.dll
-C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\MobileClient.pdb
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\res\mipmap-hdpi\appicon.png
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\res\mipmap-xhdpi\appicon.png
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\res\mipmap-xxhdpi\appicon.png
