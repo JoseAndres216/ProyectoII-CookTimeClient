@@ -31,6 +31,14 @@
             <Picker x:Name="pckDifficulty" BackgroundColor="#EFEFEF" WidthRequest="200" FontSize="Small"/>
             <Entry x:Name="txbIngredients" Keyboard="Default" FontSize="Small" Placeholder="Ingredients" BackgroundColor="#EFEFEF"/>
             <Entry x:Name="txbPreparation" Keyboard="Default" FontSize="Small" Placeholder="Preparation" BackgroundColor="#EFEFEF"/>
+            <StackLayout Orientation="Horizontal" Spacing="20">
+                <StackLayout Orientation="Vertical" Spacing="20">
+                    <Button x:Name="btnPicture" BackgroundColor="#EFEFEF" Text="Shot it!"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Spacing="20">
+
+                </StackLayout>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

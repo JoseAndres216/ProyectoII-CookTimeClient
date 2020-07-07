@@ -40,3 +40,5 @@ C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileCli
 C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\CookTime.dll
 C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\ref\CookTime.dll
 C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\CookTime.pdb
+C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\MobileClient.csproj.CoreCompileInputs.cache
+C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\XamlC.stamp

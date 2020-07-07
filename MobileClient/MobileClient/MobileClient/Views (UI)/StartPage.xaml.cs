@@ -26,5 +26,17 @@ namespace MobileClient.Views__UI_
         {
             this.Navigation.PushModalAsync(new MainPage());
         }
+        protected override bool OnBackButtonPressed()
+        {
+            Device.BeginInvokeOnMainThread(async () =>
+            {
+                bool exit = await this.DisplayAlert("Wait!", "You are going to close the app, are you sure?", "Yes", "No");
+                if (exit)
+                {
+                    System.Environment.Exit(0);
+                }
+            });
+            return true;
+        }
     }
 }
