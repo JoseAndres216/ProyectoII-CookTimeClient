@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MobileClient.ViewModel__Abstract_UI_;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,22 @@ namespace MobileClient.Views__UI_
     {
         public Profile()
         {
+            RecipeVM vM;
+
             InitializeComponent();
+            vM = new RecipeVM();
+            ListPosts.ItemsSource = vM.Posts;
+        }
+
+
+        private void btnChangeImage_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCreateEnterprise_Clicked(object sender, EventArgs e)
+        {
+
         }
     }
 }

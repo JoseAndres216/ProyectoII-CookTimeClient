@@ -8,10 +8,50 @@
              Title="Profile"
              IconImageSource="profile.png">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Empty profile"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Spacing="20" Scale="0.9">
+            <Image Source="TitleBlue.png" Scale="0.5"/>
+            <Image Source="StandartProfilePic.png"/>
+            <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Button x:Name="btnChangeImage" WidthRequest="170" Text="Change Image" BackgroundColor="#EFEFEF" FontSize="Small" Clicked="btnChangeImage_Clicked"/>
+                <Button x:Name="btnCreateEnterprise" WidthRequest="170" Text="Create Enterprise" BackgroundColor="#EFEFEF" FontSize="Small" Clicked="btnCreateEnterprise_Clicked"/>
+            </StackLayout>
+            <Label Text="My Recipes" TextColor="#EFEFEF" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            <ListView x:Name="ListPosts" HorizontalOptions="Center" 
+                      
+HasUnevenRows="True" SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="10" RowSpacing="10" ColumnSpacing="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Image HeightRequest="60"
+                                       HorizontalOptions="CenterAndExpand"
+                                       VerticalOptions="CenterAndExpand"
+                                       Aspect="AspectFill"
+                                       WidthRequest="66"
+                                       Grid.RowSpan="2"
+                                       Source="{Binding Image}"/>
+                                <Label Grid.Column="1"
+                                       Text="{Binding Name}"
+                                       TextColor="White"
+                                       VerticalOptions="End"/>
+                                <Label Grid.Row="1"
+                                       Grid.Column="1"
+                                       VerticalOptions="Start"
+                                       Text="{Binding User}"
+                                       TextColor="White"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
