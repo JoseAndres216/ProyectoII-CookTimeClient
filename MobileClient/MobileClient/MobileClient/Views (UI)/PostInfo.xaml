@@ -8,8 +8,12 @@
              BackgroundColor="#0D1218">
     <ContentPage.Content>
         <StackLayout>
-            <Image x:Name="postImage" HeightRequest="100" WidthRequest="100"/>
-            <Label x:Name="postName" Text = "" TextColor="White" FontSize="Medium" HorizontalTextAlignment="Center"/>
+            <StackLayout Orientation="Horizontal" Padding="5,0">
+                <ImageButton Source="feed.png" VerticalOptions="Center" HorizontalOptions="Center" Clicked="ImageButton_Clicked"/>
+                <Image x:Name="postImage" HeightRequest="100" WidthRequest="100"/>
+                <Label x:Name="postName" Text = "" TextColor="White" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            </StackLayout>
+
             <ScrollView Orientation="Vertical" BackgroundColor="#efefef" >
                 <StackLayout>
                     <Label x:Name="postUser" Text = "" TextColor="Black" Margin="20, 10" FontSize="Medium"/>
@@ -20,7 +24,7 @@
                     <Label x:Name="postSteps" Text="" TextColor="Black" Margin="20, 10" FontSize="Medium"/>
                 </StackLayout>
             </ScrollView>
-           
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

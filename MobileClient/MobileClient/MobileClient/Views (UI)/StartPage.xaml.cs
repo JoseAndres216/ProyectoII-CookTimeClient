@@ -38,5 +38,10 @@ namespace MobileClient.Views__UI_
             });
             return true;
         }
+
+        private void btnPass_Clicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushModalAsync(new MainPage());
+        }
     }
 }

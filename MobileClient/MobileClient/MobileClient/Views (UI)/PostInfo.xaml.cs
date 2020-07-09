@@ -28,5 +28,10 @@ namespace CookTime.Views__UI_
                 Uri = new Uri(imagesource)
             };
         }
+
+        private void ImageButton_Clicked(object sender, EventArgs e)
+        {
+            this.Navigation.PopModalAsync();
+        }
     }
 }

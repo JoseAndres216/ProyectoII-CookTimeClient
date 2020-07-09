@@ -11,7 +11,8 @@
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="30">
                 <Button x:Name="btnLogin" HorizontalOptions="Center" BackgroundColor="#EFEFEF" Text="Log in" FontSize="Medium" TextColor="#0D1218" Clicked="btnLogin_Clicked"/>
                 <Button x:Name="btnSignin" HorizontalOptions="Center" BackgroundColor="#EFEFEF" Text="Sign in" FontSize="Medium" TextColor="#0D1218" Clicked="btnSignin_Clicked"/>
+                <Button x:Name="btnPass" HorizontalOptions="Center" BackgroundColor="#EFEFEF" Text="Saltar" FontSize="Medium" TextColor="#0D1218" Clicked="btnPass_Clicked"/>
             </StackLayout>
-        </StackLayout>    
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
