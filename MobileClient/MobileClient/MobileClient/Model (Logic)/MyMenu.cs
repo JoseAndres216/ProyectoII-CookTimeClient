@@ -7,11 +7,6 @@ namespace MobileClient.Model__Logic_
 {
     public class MyMenu
     {
-        /*Name of the recipe, User that created the recipe, Type (Breakfast, lunch, etc), Servings, Duration of preparation
-         * Timing (Entry, main dish, dessert, drink, etc), Difficulty, Tags by type of diet(vegan, celiac, keto),
-         * Ingredients, Steps to prepare the dish, Price(estimated), image of the Recipe
-         */
-     
         public List<Recipe> GetMyMenu()
         {
             List<Recipe> MyMenu = new List<Recipe>()

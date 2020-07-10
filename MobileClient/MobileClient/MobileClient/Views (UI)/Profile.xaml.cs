@@ -1,4 +1,6 @@
-﻿using MobileClient.ViewModel__Abstract_UI_;
+﻿using CookTime.Views__UI_;
+using MobileClient.Model__Logic_;
+using MobileClient.ViewModel__Abstract_UI_;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,11 +17,11 @@ namespace MobileClient.Views__UI_
     {
         public Profile()
         {
-            RecipeVM vM;
+            MyMenuVM vM;
 
             InitializeComponent();
-            vM = new RecipeVM();
-            ListPosts.ItemsSource = vM.Posts;
+            vM = new MyMenuVM();
+            MyMenuList.ItemsSource = vM.MyMenu;
         }
 
 
@@ -31,6 +33,13 @@ namespace MobileClient.Views__UI_
         private void btnCreateEnterprise_Clicked(object sender, EventArgs e)
         {
 
+        }
+
+        private async void itemSelected(Object sender, ItemTappedEventArgs e)
+        {
+            var details = e.Item as Recipe;
+            await this.Navigation.PushModalAsync(new PostInfo(details.Name, details.User, details.Type, details.Servings, details.Duration,
+                details.Timing, details.Difficulty, details.Tags, details.Ingredients, details.Steps, details.Price, details.Image));
         }
     }
 }
