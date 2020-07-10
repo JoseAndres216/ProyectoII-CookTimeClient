@@ -7,7 +7,7 @@
              x:Class="CookTime.Views__UI_.PostInfo"
              BackgroundColor="#0D1218">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Orientation="Vertical" Padding="5.0">
             <StackLayout Orientation="Horizontal" Padding="5,0">
                 <ImageButton Source="feed.png" VerticalOptions="Center" HorizontalOptions="Center" Clicked="ImageButton_Clicked"/>
                 <Image x:Name="postImage" HeightRequest="100" WidthRequest="100"/>
@@ -28,7 +28,12 @@
                     <Label x:Name="postPrice" Text = "" TextColor="Black" Margin="20, 3, 20, 10" FontSize="Medium"/>
                 </StackLayout>
             </ScrollView>
-
+            <StackLayout Orientation="Horizontal" Padding="5.0" HorizontalOptions="CenterAndExpand">
+                <Button x:Name="btnShare" Text="Share recipe" TextColor="Black" Clicked="btnShare_Clicked" BackgroundColor="#EFEFEF" FontSize="Small" HorizontalOptions="Center"/>
+                <Button x:Name="btnQualify" Text="Qualify" TextColor="Black" Clicked="btnQualify_Clicked"  BackgroundColor="#EFEFEF" FontSize="Small" HorizontalOptions="Center"/>
+                <Picker x:Name="pckQuilification" HorizontalOptions="Center" FontSize="Medium" TextColor="Black" BackgroundColor="#EFEFEF" WidthRequest="50"/>
+            </StackLayout>
+            <Button x:Name="btnSeeComentaries" HorizontalOptions="Center" Text="See all the commentaries" BackgroundColor="#0D1218" TextColor="#EFEFEF" Clicked="btnSeeComentaries_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
