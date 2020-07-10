@@ -12,20 +12,24 @@ namespace CookTime.Views__UI_
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PostInfo : ContentPage
     {
-        public PostInfo(string name, string user, string type, string duration, string difficulty, string ingredients,
-            string steps, string imagesource)
+        public PostInfo(string name, string user, string type, int servings, string duration, string timing, string difficulty,
+            string tags, string ingredients, string steps, int price, string image)
         {
             InitializeComponent();
             postName.Text = name;
-            postUser.Text = "By: " + user;
-            postType.Text = "Type: " + type;
-            postDuration.Text = "It takes: " + duration;
-            postDifficulty.Text = "From one to ten this is a: " + difficulty;
-            postIngredients.Text = "You'll need: \n" + ingredients;
-            postSteps.Text = "Steps: \n" + steps; 
+            postUser.Text = "- By: " + user;
+            postType.Text = "- Type: " + type;
+            postServings.Text = "- It serves for " + servings + " people";
+            postDuration.Text = "- It takes: " + duration;
+            postTiming.Text = "- Its a " + timing;
+            postDifficulty.Text = "- From one to ten this is a: " + difficulty;
+            postTags.Text = "- Tags: " + tags;
+            postIngredients.Text = "- You'll need: \n" + ingredients;
+            postSteps.Text = "- Steps: \n" + steps;
+            postPrice.Text = "- Suggested price $ " + price;
             postImage.Source = new UriImageSource()
             {
-                Uri = new Uri(imagesource)
+                Uri = new Uri(image)
             };
         }
 

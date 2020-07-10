@@ -21,8 +21,8 @@ namespace MobileClient.Views__UI_
         private async void itemSelected(Object sender, ItemTappedEventArgs e)
         {
             var details = e.Item as Recipe;
-            await this.Navigation.PushModalAsync(new PostInfo(details.Name, details.User, details.Type, details.Duration,
-                details.Difficulty, details.Ingredients, details.Steps, details.Image));
+            await this.Navigation.PushModalAsync(new PostInfo(details.Name, details.User, details.Type, details.Servings, details.Duration,
+                details.Timing, details.Difficulty, details.Tags, details.Ingredients, details.Steps, details.Price, details.Image));
         }
 
         private void ListPosts_ItemSelected(object sender, SelectedItemChangedEventArgs e)

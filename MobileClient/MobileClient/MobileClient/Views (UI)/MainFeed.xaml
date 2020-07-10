@@ -37,12 +37,14 @@
                                        Source="{Binding Image}"/>
                                         <Label Grid.Column="1"
                                        Text= "{Binding Name}"
+                                       FontSize="Medium"
+                                       FontAttributes="Bold"
                                        TextColor="White"
                                        VerticalOptions="End"/>
                                         <Label Grid.Row="1"
                                        Grid.Column="1"
                                        VerticalOptions="Start"
-                                       Text = "{Binding User, StringFormat='By: {0}' }"
+                                       Text = "{Binding User, StringFormat='By: {0}'}"
                                        TextColor="White"/>
 
                                     </Grid>

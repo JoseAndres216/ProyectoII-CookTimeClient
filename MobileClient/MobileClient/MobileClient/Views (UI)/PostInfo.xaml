@@ -16,12 +16,16 @@
 
             <ScrollView Orientation="Vertical" BackgroundColor="#efefef" >
                 <StackLayout>
-                    <Label x:Name="postUser" Text = "" TextColor="Black" Margin="20, 10" FontSize="Medium"/>
-                    <Label x:Name="postType" Text="" TextColor="Black" Margin="20, 10" FontSize="Medium"/>
-                    <Label x:Name="postDuration" Text="" TextColor="Black" Margin="20, 10" FontSize="Medium"/>
-                    <Label x:Name="postDifficulty" Text="" TextColor="Black" Margin="20, 10" FontSize="Medium"/>
-                    <Label x:Name="postIngredients" Text="" TextColor="Black" Margin="20, 10" FontSize="Medium"/>
-                    <Label x:Name="postSteps" Text="" TextColor="Black" Margin="20, 10" FontSize="Medium"/>
+                    <Label x:Name="postUser" Text = "" TextColor="Black" Margin="20, 10, 20, 3" FontSize="Medium"/>
+                    <Label x:Name="postType" Text="" TextColor="Black" Margin="20, 3" FontSize="Medium"/>
+                    <Label x:Name="postServings" Text = "" TextColor="Black" Margin="20, 3" FontSize="Medium"/>
+                    <Label x:Name="postDuration" Text="" TextColor="Black" Margin="20, 3" FontSize="Medium"/>
+                    <Label x:Name="postTiming" Text = "" TextColor="Black" Margin="20, 3" FontSize="Medium"/>
+                    <Label x:Name="postDifficulty" Text="" TextColor="Black" Margin="20, 3" FontSize="Medium"/>
+                    <Label x:Name="postTags" Text = "" TextColor="Black" Margin="20, 3" FontSize="Medium"/>
+                    <Label x:Name="postIngredients" Text="" TextColor="Black" Margin="20, 3" FontSize="Medium"/>
+                    <Label x:Name="postSteps" Text="" TextColor="Black" Margin="20, 3" FontSize="Medium"/>
+                    <Label x:Name="postPrice" Text = "" TextColor="Black" Margin="20, 3, 20, 10" FontSize="Medium"/>
                 </StackLayout>
             </ScrollView>
 
