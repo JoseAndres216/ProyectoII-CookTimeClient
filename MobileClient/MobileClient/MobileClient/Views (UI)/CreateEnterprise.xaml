@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MobileClient.Views__UI_.Create"
+             Title="CreateEnterprise"
+             IconImageSource="add.png"
+             BackgroundColor="#0D1218">
+    
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Spacing="20" Scale="0.9">
+            <Image Source="TitleBlue.png" VerticalOptions="Start" HorizontalOptions="Start" Scale="0.5"/>
+            <Entry x:Name="txbEnterpriseName" Keyboard="Default" FontSize="Small" Placeholder="Name of the Enterprise" BackgroundColor="#EFEFEF"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Spacing="20">
+                <Label Text="Logo of the Enterprise" TextColor="#EFEFEF" FontSize="Medium" HorizontalTextAlignment="Left"/>
+                <Button x:Name="btnLogo" BackgroundColor="#EFEFEF" Text="Select Image" Clicked="btnLogo_Clicked"/>
+                <StackLayout Orientation="Vertical" HorizontalOptions="Start" Spacing="20">
+                    <Image Source="StandartProfilePic.png"/>
+                </StackLayout>
+            </StackLayout>
+            <Label Text="Contact Info" TextColor="#EFEFEF" FontSize="Medium" HorizontalTextAlignment="Start"/>
+            <Entry x:Name="txbCellphoneNumber" Keyboard="Default" FontSize="Small" Placeholder="Cellphone Number" BackgroundColor="#EFEFEF"/>
+            <Entry x:Name="txbEmailAddress" Keyboard="Default" FontSize="Small" Placeholder="Email Address" BackgroundColor="#EFEFEF"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Spacing="20">
+                <Label Text="GPS Address" TextColor="#EFEFEF" FontSize= "Medium" HorizontalTextAlignment ="Start"/>
+                <Button x:Name="btnLogo" BackgroundColor="#EFEFEF" Text="Select Image" Clicked="btnLogo_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

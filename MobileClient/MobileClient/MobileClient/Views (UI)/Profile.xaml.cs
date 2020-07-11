@@ -30,7 +30,7 @@ namespace MobileClient.Views__UI_
 
         private void btnCreateEnterprise_Clicked(object sender, EventArgs e)
         {
-
+            this.Navigation.PushModalAsync(new CreateEnterprise());
         }
     }
 }

@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\MobileClient",
+    "\\MobileClient\\MobileClient",
+    "\\MobileClient\\MobileClient\\MobileClient",
+    "\\MobileClient\\MobileClient\\MobileClient.Android",
+    "\\MobileClient\\MobileClient\\MobileClient\\Views (UI)"
+  ],
+  "SelectedNode": "\\MobileClient\\MobileClient\\MobileClient\\Views (UI)\\CreateEnterprise.xaml",
+  "PreviewInSolutionExplorer": false
+}
