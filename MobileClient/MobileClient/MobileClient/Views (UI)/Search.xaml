@@ -10,11 +10,26 @@
     <ContentPage.Content>
         <StackLayout Spacing="4" Padding="12">
             <SearchBar Placeholder="What recipe are you looking for?" BackgroundColor="#EFEFEF" CancelButtonColor="Gray"/>
-            <ListView x:Name="RecommendationList" HorizontalOptions="Center">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+                <Button x:Name="recipesButton" Text="Recipes" HorizontalOptions="Center" Clicked="recipesButton_Clicked" />
+                <Button x:Name="usersButton" Text="Users" HorizontalOptions="Center" Clicked="usersButton_Clicked"/>
+                <Button x:Name="companiesButton" Text="Companies" HorizontalOptions="Center" Clicked="companiesButton_Clicked"/>
+            </StackLayout>
+            <ListView x:Name="RecommendationList" HorizontalOptions="Center"
+                      ItemTapped="RecommendationList_ItemTapped"
+                      HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding Name}" TextColor="#EFEFEF"
-                              Detail="{Binding User}" DetailColor="#EFEFEF"/>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <Frame CornerRadius="10" BackgroundColor="#383838" Margin="2,4">
+                                    <StackLayout>
+                                        <Label Text="{Binding Name}" TextColor="White" FontSize="Medium"/>
+                                        <Label Text="{Binding User, StringFormat = 'By: {0}'}" TextColor="White" FontSize="14"/>
+                                    </StackLayout>
+                                </Frame>
+                            </ViewCell.View>
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

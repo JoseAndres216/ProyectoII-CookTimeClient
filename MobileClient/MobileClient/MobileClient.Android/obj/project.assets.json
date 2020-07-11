@@ -1931,24 +1931,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Users\\Jose Andrés\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient.Android\\MobileClient.Android.csproj",
+      "projectUniqueName": "C:\\Users\\JoseAndresApps\\Proyectos\\CookTimeClient\\Codigo\\MobileClient\\MobileClient\\MobileClient.Android\\MobileClient.Android.csproj",
       "projectName": "MobileClient.Android",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient.Android\\MobileClient.Android.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient.Android\\obj\\",
+      "projectPath": "C:\\Users\\JoseAndresApps\\Proyectos\\CookTimeClient\\Codigo\\MobileClient\\MobileClient\\MobileClient.Android\\MobileClient.Android.csproj",
+      "packagesPath": "C:\\Users\\Jose Andrés\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\JoseAndresApps\\Proyectos\\CookTimeClient\\Codigo\\MobileClient\\MobileClient\\MobileClient.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jose Andrés\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1962,8 +1962,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\Admin\\source\\repos\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj": {
-              "projectPath": "C:\\Users\\Admin\\source\\repos\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj"
+            "C:\\Users\\JoseAndresApps\\Proyectos\\CookTimeClient\\Codigo\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj": {
+              "projectPath": "C:\\Users\\JoseAndresApps\\Proyectos\\CookTimeClient\\Codigo\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj"
             }
           }
         }

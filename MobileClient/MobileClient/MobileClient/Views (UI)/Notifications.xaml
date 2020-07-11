@@ -9,9 +9,43 @@
              IconImageSource="not1.png">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="No new notifications"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Image Source="TitleBlue.png" VerticalOptions="Start" HorizontalOptions="Center" Scale="0.5"/>
+            <ListView x:Name="NotificationsList" HorizontalOptions="Center" 
+                      HasUnevenRows="True" 
+                      SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <Frame CornerRadius="10" BackgroundColor="#383838" Margin="4,4">
+                                    <Grid RowSpacing="10" ColumnSpacing="10">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.Column="1"
+                                       Text= "{Binding User}"
+                                       FontSize="Medium"
+                                       FontAttributes="Bold"
+                                       TextColor="White"
+                                       VerticalOptions="End"/>
+                                        <Label Grid.Row="1"
+                                       Grid.Column="1"
+                                       VerticalOptions="Start"
+                                       Text = "{Binding Message}"
+                                       TextColor="White"/>
+
+                                    </Grid>
+                                </Frame>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

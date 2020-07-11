@@ -17,33 +17,39 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid Padding="10" RowSpacing="10" ColumnSpacing="10">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto"/>
-                                    <RowDefinition Height="*"/>
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-                                <Image HeightRequest="60"
+                            <ViewCell.View>
+                                <Frame CornerRadius="10" BackgroundColor="#383838" Margin="4,4">
+                                    <Grid RowSpacing="10" ColumnSpacing="10">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image HeightRequest="60"
                                        HorizontalOptions="CenterAndExpand"
                                        VerticalOptions="CenterAndExpand"
                                        Aspect="AspectFill"
                                        WidthRequest="66"
                                        Grid.RowSpan="2"
                                        Source="{Binding Image}"/>
-                                <Label Grid.Column="1"
-                                       Text="{Binding Name}"
+                                        <Label Grid.Column="1"
+                                       Text= "{Binding Name}"
+                                       FontSize="Medium"
+                                       FontAttributes="Bold"
                                        TextColor="White"
                                        VerticalOptions="End"/>
-                                <Label Grid.Row="1"
+                                        <Label Grid.Row="1"
                                        Grid.Column="1"
                                        VerticalOptions="Start"
-                                       Text="{Binding User}"
+                                       Text = "{Binding User, StringFormat='By: {0}'}"
                                        TextColor="White"/>
 
-                            </Grid>
+                                    </Grid>
+                                </Frame>
+                            </ViewCell.View>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>

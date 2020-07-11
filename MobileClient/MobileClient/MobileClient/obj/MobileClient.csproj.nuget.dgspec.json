@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj": {}
+    "C:\\Users\\JoseAndresApps\\Proyectos\\CookTimeClient\\Codigo\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj": {
+    "C:\\Users\\JoseAndresApps\\Proyectos\\CookTimeClient\\Codigo\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj",
+        "projectUniqueName": "C:\\Users\\JoseAndresApps\\Proyectos\\CookTimeClient\\Codigo\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj",
         "projectName": "CookTime",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\obj\\",
+        "projectPath": "C:\\Users\\JoseAndresApps\\Proyectos\\CookTimeClient\\Codigo\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj",
+        "packagesPath": "C:\\Users\\Jose Andrés\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\JoseAndresApps\\Proyectos\\CookTimeClient\\Codigo\\MobileClient\\MobileClient\\MobileClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jose Andrés\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
