@@ -8,13 +8,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("CookTime.Views__UI_.CreateEnterprise.xaml", "Views (UI)/CreateEnterprise.xaml", typeof(global::MobileClient.Views__UI_.Create))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("CookTime.Views__UI_.CreateEnterprise.xaml", "Views (UI)/CreateEnterprise.xaml", typeof(global::MobileClient.Views__UI_.CreateEnterprise))]
 
 namespace MobileClient.Views__UI_ {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views (UI)\\CreateEnterprise.xaml")]
-    public partial class Create : global::Xamarin.Forms.ContentPage {
+    public partial class CreateEnterprise : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Entry txbEnterpriseName;
@@ -29,16 +29,16 @@ namespace MobileClient.Views__UI_ {
         private global::Xamarin.Forms.Entry txbEmailAddress;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Button btnLogo;
+        private global::Xamarin.Forms.Button btnAddress;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Create));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(CreateEnterprise));
             txbEnterpriseName = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "txbEnterpriseName");
             btnLogo = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "btnLogo");
             txbCellphoneNumber = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "txbCellphoneNumber");
             txbEmailAddress = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "txbEmailAddress");
-            btnLogo = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "btnLogo");
+            btnAddress = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "btnAddress");
         }
     }
 }

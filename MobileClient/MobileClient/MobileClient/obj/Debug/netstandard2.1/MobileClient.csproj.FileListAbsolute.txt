@@ -67,3 +67,4 @@ C:\Users\Admin\source\repos\ProyectoII-CooktimeClient\MobileClient\MobileClient\
 C:\Users\Admin\source\repos\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\MobileClient.AssemblyInfo.cs
 C:\Users\Admin\source\repos\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\MobileClient.csproj.CoreCompileInputs.cache
 C:\Users\Admin\source\repos\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\XamlC.stamp
+C:\Users\Admin\source\repos\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\CreateEnterprise.xaml.g.cs

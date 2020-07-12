@@ -14,7 +14,15 @@ namespace MobileClient.Views__UI_
     {
         public CreateEnterprise()
         {
+            InitializeComponent();
+        }
+        private async void btnLogo_Clicked(object sender, EventArgs e)
+        {
           
+        }
+        private async void btnAddress_Clicked(object sender, EventArgs e)
+        {
+    
         }
     }
  }

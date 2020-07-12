@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="MobileClient.Views__UI_.Create"
+             x:Class="MobileClient.Views__UI_.CreateEnterprise"
              Title="CreateEnterprise"
              IconImageSource="add.png"
              BackgroundColor="#0D1218">
@@ -25,7 +25,7 @@
             <Entry x:Name="txbEmailAddress" Keyboard="Default" FontSize="Small" Placeholder="Email Address" BackgroundColor="#EFEFEF"/>
             <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Spacing="20">
                 <Label Text="GPS Address" TextColor="#EFEFEF" FontSize= "Medium" HorizontalTextAlignment ="Start"/>
-                <Button x:Name="btnLogo" BackgroundColor="#EFEFEF" Text="Select Image" Clicked="btnLogo_Clicked"/>
+                <Button x:Name="btnAddress" BackgroundColor="#EFEFEF" Text="Select Image" Clicked="btnAddress_Clicked"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
