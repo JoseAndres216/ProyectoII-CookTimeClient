@@ -9,7 +9,7 @@
              IconImageSource="search.png">
     <ContentPage.Content>
         <StackLayout Spacing="4" Padding="12">
-            <SearchBar Placeholder="What recipe are you looking for?" BackgroundColor="#EFEFEF" CancelButtonColor="Gray"/>
+            <SearchBar x:Name="RecoSearchBar" TextChanged="SearchBar_TextChanged" Placeholder="What recipe are you looking for?" BackgroundColor="#EFEFEF" CancelButtonColor="Gray"/>
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
                 <Button x:Name="recipesButton" Text="Recipes" HorizontalOptions="Center" Clicked="recipesButton_Clicked" />
                 <Button x:Name="usersButton" Text="Users" HorizontalOptions="Center" Clicked="usersButton_Clicked"/>
