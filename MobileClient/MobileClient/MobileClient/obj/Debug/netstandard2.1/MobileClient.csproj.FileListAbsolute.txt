@@ -15,8 +15,6 @@ C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClien
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\StartPage.xaml.g.cs
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\MobileClient.AssemblyInfoInputs.cache
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\MobileClient.AssemblyInfo.cs
-C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\MobileClient.csproj.CoreCompileInputs.cache
-C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\XamlC.stamp
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\CookTime.dll
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\ref\CookTime.dll
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\CookTime.pdb
@@ -69,3 +67,4 @@ C:\Users\Admin\source\repos\ProyectoII-CooktimeClient\MobileClient\MobileClient\
 C:\Users\Admin\source\repos\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\XamlC.stamp
 C:\Users\Admin\source\repos\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\CreateEnterprise.xaml.g.cs
 C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\CreateEnterprise.xaml.g.cs
+C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\CreateEnterprise.xaml.g.cs

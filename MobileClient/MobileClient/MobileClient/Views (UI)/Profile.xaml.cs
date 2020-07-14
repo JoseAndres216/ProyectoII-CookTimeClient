@@ -41,5 +41,10 @@ namespace MobileClient.Views__UI_
             await this.Navigation.PushModalAsync(new PostInfo(details.Name, details.User, details.Type, details.Servings, details.Duration,
                 details.Timing, details.Difficulty, details.Tags, details.Ingredients, details.Steps, details.Price, details.Image));
         }
+
+        private void btnBecomeChef_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
