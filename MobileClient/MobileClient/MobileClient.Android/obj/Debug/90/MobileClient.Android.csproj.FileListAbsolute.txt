@@ -1994,3 +1994,8 @@ C:\Users\Admin\source\repos\ProyectoII-CooktimeClient\MobileClient\MobileClient\
 C:\Users\Admin\source\repos\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Admin\source\repos\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\res\drawable\standartprofilepic.png
+C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\Newtonsoft.Json.dll
+C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\System.Net.Http.Extensions.dll
+C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\System.Net.Http.Primitives.dll
+C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\System.Net.Primitives.dll
+C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\System.Runtime.InteropServices.dll

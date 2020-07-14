@@ -32,7 +32,7 @@ namespace MobileClient.Views__UI_
             {
                 if (txbPassword.Text == txbPasswordConfrmation.Text)
                 {
-                    User user = new User(txbEmail.Text, txbPassword.Text, txbUsername.Text, int (txbAge.Text));
+                    User user = new User(txbEmail.Text, txbPassword.Text, txbUsername.Text, Int32.Parse(txbAge.Text));
                     var registerjson = Newtonsoft.Json.JsonConvert.SerializeObject(user);
                     var content = new StringContent(registerjson);
                     

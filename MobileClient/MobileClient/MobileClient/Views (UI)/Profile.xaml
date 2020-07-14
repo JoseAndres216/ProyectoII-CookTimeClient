@@ -12,9 +12,9 @@
             <Image Source="TitleBlue.png" Scale="0.5"/>
             <Image Source="StandartProfilePic.png"/>
             <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                <Button x:Name="btnChangeImage" WidthRequest="170" Text="Change Image" BackgroundColor="#EFEFEF" FontSize="Small" Clicked="btnChangeImage_Clicked"/>
-                <Button x:Name="btnBecomeChef" WidthRequest="170" Text="Become Chef" BackgroundColor="#EFEFEF" FontSize="Small" Clicked="btnBecomeChef_Clicked"/>
-                <Button x:Name="btnCreateEnterprise" WidthRequest="170" Text="Create Enterprise" BackgroundColor="#EFEFEF" FontSize="Small" Clicked="btnCreateEnterprise_Clicked"/>
+                <Button x:Name="btnChangeImage" WidthRequest="110" Text="Change Image" BackgroundColor="#EFEFEF" FontSize="Small" Clicked="btnChangeImage_Clicked"/>
+                <Button x:Name="btnBecomeChef" WidthRequest="110" Text="Become Chef" BackgroundColor="#EFEFEF" FontSize="Small" Clicked="btnBecomeChef_Clicked"/>
+                <Button x:Name="btnCreateEnterprise" WidthRequest="110" Text="Create Enterprise" BackgroundColor="#EFEFEF" FontSize="Small" Clicked="btnCreateEnterprise_Clicked"/>
             </StackLayout>
             <Label Text="My Recipes" TextColor="#EFEFEF" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
             <ListView x:Name="MyMenuList" HorizontalOptions="Center" 

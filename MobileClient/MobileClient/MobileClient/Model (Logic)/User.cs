@@ -23,6 +23,11 @@ namespace CookTime.Model__Logic_
             this.Age = age;
         }
 
+        public User()
+        {
+
+        }
+
         public List<User> GetUsers()
         {
             List<User> users = new List<User>()
