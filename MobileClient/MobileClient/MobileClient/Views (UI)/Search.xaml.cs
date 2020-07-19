@@ -78,7 +78,7 @@ namespace MobileClient.Views__UI_
             else if(usersButton.IsEnabled == false)
             {
                 var keyword = RecoSearchBar.Text;
-                RecommendationList.ItemsSource = UserVM.Users.Where(i => i.Name.ToLower().Contains(keyword.ToLower()));
+                RecommendationList.ItemsSource = UserVM.Users.Where(i => i.name.ToLower().Contains(keyword.ToLower()));
             }
             else if(companiesButton.IsEnabled == false)
             {
