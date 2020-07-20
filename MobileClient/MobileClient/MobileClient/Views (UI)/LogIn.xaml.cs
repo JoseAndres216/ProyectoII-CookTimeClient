@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CookTime.Model__Logic_;
+using CookTime.ViewModel__Abstract_UI_;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,6 +27,8 @@ namespace MobileClient.Views__UI_
         {
             if (!string.IsNullOrWhiteSpace(txbUsername.Text) && !string.IsNullOrWhiteSpace(txbPassword.Text))
             {
+                User user = new User(); //Aqui hay que igualar al usuario que se deserializa del Json
+                Client.getInstance().setUser(user);
                 await Navigation.PushModalAsync(new MainPage());
 
             }

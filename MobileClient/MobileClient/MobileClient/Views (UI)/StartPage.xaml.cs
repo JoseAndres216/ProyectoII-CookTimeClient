@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CookTime.Model__Logic_;
+using CookTime.ViewModel__Abstract_UI_;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -41,6 +43,9 @@ namespace MobileClient.Views__UI_
 
         private void btnPass_Clicked(object sender, EventArgs e)
         {
+            User user = new User();
+            user.name = "Prueba1234";
+            Client.getInstance().setUser(user);
             this.Navigation.PushModalAsync(new MainPage());
         }
     }

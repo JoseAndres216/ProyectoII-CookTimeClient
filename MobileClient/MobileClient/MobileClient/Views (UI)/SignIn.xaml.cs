@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using CookTime.Model__Logic_;
+using CookTime.ViewModel__Abstract_UI_;
 
 namespace MobileClient.Views__UI_
 {
@@ -46,6 +47,7 @@ namespace MobileClient.Views__UI_
                     if (response.ReasonPhrase.Equals("OK"))
                     {
                         await DisplayAlert("Alright!", "Everything is setted up for you, go in and take a look!", "Go in!");
+                        Client.getInstance().setUser(user);
                         await this.Navigation.PushModalAsync(new MainPage());
                     }
                     else

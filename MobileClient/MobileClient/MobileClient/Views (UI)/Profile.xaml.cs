@@ -1,4 +1,5 @@
-﻿using CookTime.Views__UI_;
+﻿using CookTime.ViewModel__Abstract_UI_;
+using CookTime.Views__UI_;
 using MobileClient.Model__Logic_;
 using MobileClient.ViewModel__Abstract_UI_;
 using System;
@@ -22,6 +23,7 @@ namespace MobileClient.Views__UI_
             InitializeComponent();
             vM = new MyMenuVM();
             MyMenuList.ItemsSource = vM.MyMenu;
+            lblUserName.Text = Client.getInstance().getUser().name;
         }
 
 
