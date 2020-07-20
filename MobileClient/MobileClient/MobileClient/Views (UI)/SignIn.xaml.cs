@@ -38,7 +38,6 @@ namespace MobileClient.Views__UI_
                     var content = new StringContent(registerjson, Encoding.UTF8, "application/json");
                     
                     
-                    
                     HttpClient client = new HttpClient();
                     client.BaseAddress = new Uri("http://192.168.100.11:8080/CookTimeServer/user/create?info=" + registerjson);
                     

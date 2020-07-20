@@ -5,8 +5,9 @@ using System.Text;
 
 namespace CookTime.Model__Logic_
 {
-    public class User
-    {
+    public class User { 
+   
+   
         public string email { get; set; }
         //public MyMenu MyMenu { get; set; }
         public string name { get; set; }

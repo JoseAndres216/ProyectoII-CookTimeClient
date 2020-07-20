@@ -5,8 +5,10 @@ using System.Text;
 
 namespace CookTime.ViewModel__Abstract_UI_
 {
+    
     class Client
     {
+        public const string HTTP_BASE_URL = "http://192.168.100.11:8080/CookTimeServer/";
         private static Client instance = null;
         private User user;
 
