@@ -26,7 +26,7 @@ namespace MobileClient.Views__UI_
             vM = new RecipeVM();
             UserVM = new UserVM();
             EnterpriseVM = new EnterpriseVM();
-            RecommendationList.ItemsSource = vM.Posts;
+            RecommendationList.ItemsSource = vM.getPostsIL();
             BindingContext = RecommendationList;
             
             recipesButton.IsEnabled = false;
@@ -38,13 +38,13 @@ namespace MobileClient.Views__UI_
         private void RecommendationList_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             var details = e.Item as Recipe;
-            this.Navigation.PushModalAsync(new PostInfo(details.Name, details.User, details.Type, details.Servings, details.Duration,
-                details.Timing, details.Difficulty, details.Tags, details.Ingredients, details.Steps, details.Price, details.Image));
+            this.Navigation.PushModalAsync(new PostInfo(details.getName(), details.getUser(), details.getType(), details.getServings(), details.getDuration(),
+                details.getTiming(), details.getDifficulty().ToString(), details.getTags(), details.getIngredients(), details.getSteps(), details.getPrice(), details.getImage()));
         }
 
         private void recipesButton_Clicked(object sender, EventArgs e)
         {
-            RecommendationList.ItemsSource = vM.Posts;
+            RecommendationList.ItemsSource = vM.getPostsIL();
 
             recipesButton.IsEnabled = false;
             usersButton.IsEnabled = true;
@@ -53,7 +53,7 @@ namespace MobileClient.Views__UI_
 
         private void usersButton_Clicked(object sender, EventArgs e)
         {
-            RecommendationList.ItemsSource = UserVM.Users;
+            RecommendationList.ItemsSource = null;
             recipesButton.IsEnabled = true;
             usersButton.IsEnabled = false;
             companiesButton.IsEnabled = true;
@@ -73,12 +73,12 @@ namespace MobileClient.Views__UI_
             if(recipesButton.IsEnabled == false)
             {
                 var keyword = RecoSearchBar.Text;
-                RecommendationList.ItemsSource = vM.Posts.Where(i => i.Name.ToLower().Contains(keyword.ToLower()));
+                RecommendationList.ItemsSource = vM.getPostsIL().Where(i => i.getName().ToLower().Contains(keyword.ToLower()));
             }
             else if(usersButton.IsEnabled == false)
             {
                 var keyword = RecoSearchBar.Text;
-                RecommendationList.ItemsSource = UserVM.Users.Where(i => i.name.ToLower().Contains(keyword.ToLower()));
+                RecommendationList.ItemsSource = UserVM.Users.Where(i => i.getName().ToLower().Contains(keyword.ToLower()));
             }
             else if(companiesButton.IsEnabled == false)
             {

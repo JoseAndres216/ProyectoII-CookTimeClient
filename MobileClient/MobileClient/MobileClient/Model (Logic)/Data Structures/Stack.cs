@@ -4,12 +4,13 @@ using System.Text;
 
 namespace CookTime.Model__Logic_.Data_Structures
 {
-    class Stack<T>
+    public class Stack<T>
     {
         private SimpleList<T> elements;
 
         public Stack()
         {
+            elements = new SimpleList<T>();
         }
 
         public void setElements(SimpleList<T> elements)

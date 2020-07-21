@@ -4,14 +4,17 @@ using System.Text;
 
 namespace CookTime.Model__Logic_.Data_Structures
 {
-    class SimpleList<T>
+    public class SimpleList<T>
     {
-        Node<T> head = null;
-        Node<T> tail = null;
-        int len = 0;
+        private Node<T> head;
+        private Node<T> tail;
+        private int len;
 
         public SimpleList()
         {
+            head = null;
+            tail = null;
+            len = 0;
         }
 
         public void setHead(Node<T> head)

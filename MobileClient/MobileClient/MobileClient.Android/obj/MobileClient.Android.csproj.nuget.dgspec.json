@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eduar\\Desktop\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient.Android\\MobileClient.Android.csproj": {}
+    "C:\\Users\\JoseAndresApps\\Proyectos\\CookTimeClient\\Codigo\\MobileClient\\MobileClient\\MobileClient.Android\\MobileClient.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eduar\\Desktop\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient.Android\\MobileClient.Android.csproj": {
+    "C:\\Users\\JoseAndresApps\\Proyectos\\CookTimeClient\\Codigo\\MobileClient\\MobileClient\\MobileClient.Android\\MobileClient.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eduar\\Desktop\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient.Android\\MobileClient.Android.csproj",
+        "projectUniqueName": "C:\\Users\\JoseAndresApps\\Proyectos\\CookTimeClient\\Codigo\\MobileClient\\MobileClient\\MobileClient.Android\\MobileClient.Android.csproj",
         "projectName": "MobileClient.Android",
-        "projectPath": "C:\\Users\\eduar\\Desktop\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient.Android\\MobileClient.Android.csproj",
-        "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eduar\\Desktop\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient.Android\\obj\\",
+        "projectPath": "C:\\Users\\JoseAndresApps\\Proyectos\\CookTimeClient\\Codigo\\MobileClient\\MobileClient\\MobileClient.Android\\MobileClient.Android.csproj",
+        "packagesPath": "C:\\Users\\Jose Andrés\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\JoseAndresApps\\Proyectos\\CookTimeClient\\Codigo\\MobileClient\\MobileClient\\MobileClient.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\eduar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jose Andrés\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\eduar\\Desktop\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj": {
-                "projectPath": "C:\\Users\\eduar\\Desktop\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj"
+              "C:\\Users\\JoseAndresApps\\Proyectos\\CookTimeClient\\Codigo\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj": {
+                "projectPath": "C:\\Users\\JoseAndresApps\\Proyectos\\CookTimeClient\\Codigo\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj"
               }
             }
           }
@@ -54,21 +54,21 @@
         }
       }
     },
-    "C:\\Users\\eduar\\Desktop\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj": {
+    "C:\\Users\\JoseAndresApps\\Proyectos\\CookTimeClient\\Codigo\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eduar\\Desktop\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj",
+        "projectUniqueName": "C:\\Users\\JoseAndresApps\\Proyectos\\CookTimeClient\\Codigo\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj",
         "projectName": "CookTime",
-        "projectPath": "C:\\Users\\eduar\\Desktop\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj",
-        "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eduar\\Desktop\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\obj\\",
+        "projectPath": "C:\\Users\\JoseAndresApps\\Proyectos\\CookTimeClient\\Codigo\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj",
+        "packagesPath": "C:\\Users\\Jose Andrés\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\JoseAndresApps\\Proyectos\\CookTimeClient\\Codigo\\MobileClient\\MobileClient\\MobileClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\eduar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jose Andrés\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -125,7 +125,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

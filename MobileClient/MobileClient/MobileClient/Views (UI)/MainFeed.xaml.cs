@@ -16,13 +16,13 @@ namespace MobileClient.Views__UI_
         {
             InitializeComponent();
             vM = new RecipeVM();
-            ListPosts.ItemsSource = vM.Posts;
+            ListPosts.ItemsSource = vM.getPostsIL();
         }
         private async void itemSelected(Object sender, ItemTappedEventArgs e)
         {
             var details = e.Item as Recipe;
-            await this.Navigation.PushModalAsync(new PostInfo(details.Name, details.User, details.Type, details.Servings, details.Duration,
-                details.Timing, details.Difficulty, details.Tags, details.Ingredients, details.Steps, details.Price, details.Image));
+            await this.Navigation.PushModalAsync(new PostInfo(details.getName(), details.getUser(), details.getType(), details.getServings(), details.getDuration(),
+                details.getTiming(), details.getDifficulty().ToString(), details.getTags(), details.getIngredients(), details.getSteps(), details.getPrice(), details.getImage()));
         }
 
         private void ListPosts_ItemSelected(object sender, SelectedItemChangedEventArgs e)

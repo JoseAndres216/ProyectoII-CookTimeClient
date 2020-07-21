@@ -1,4 +1,5 @@
-﻿using MobileClient.Model__Logic_;
+﻿using CookTime.Model__Logic_.Data_Structures;
+using MobileClient.Model__Logic_;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -6,15 +7,18 @@ using System.Text;
 namespace CookTime.Model__Logic_
 {
     public class User { 
-   
-   
-        public string email { get; set; }
-        //public MyMenu MyMenu { get; set; }
-        public string name { get; set; }
-        public string password { get; set; }
-        public int age { get; set; }
-        //public int Age { get; set; }
-        //public int Rating { get; set; }
+
+        private string email { get; set; }
+        private string name { get; set; }
+        private string password { get; set; }
+        private int age { get; set; }
+        private int rating;
+        private bool isChef;
+        private Data_Structures.Stack<string> notifications;
+        private SimpleList<User> followers;
+        private Data_Structures.Stack<Recipe> newsFeed;
+        private MyMenu MyMenu;
+
 
         public User(string email, string password, string name, int age)
         {
@@ -22,6 +26,12 @@ namespace CookTime.Model__Logic_
             this.password = password;
             this.name = name;
             this.age = age;
+            this.rating = 0;
+            this.isChef = false;
+            this.notifications = new Data_Structures.Stack<string>();
+            this.followers = new SimpleList<User>();
+            newsFeed = new Data_Structures.Stack<Recipe>();
+            MyMenu = new MyMenu();
         }
 
         public User()
@@ -29,41 +39,28 @@ namespace CookTime.Model__Logic_
 
         }
 
-        public List<User> GetUsers()
+        public void setName(string name)
         {
-            List<User> users = new List<User>()
-            {
-                new User("jaj","Daniel 'el covid nos va a matar' Salas","pepe", 10)
-                ,
-                new User("jaj","kobe Bryant","pepe", 10)
-                ,
-                new User("jaj","Mi maestra de tercer grado","pepe", 10)
-                ,
-                new User("jaj","Diego de la era del hielo","pepe", 10)
-                ,
-                new User("jaj","Mary Poppins","pepe", 10)
-                ,
-                new User("jaj","Daniel 'el covid nos va a matar' Salas","pepe", 10)
-                ,
-                new User("jaj","kobe Bryant","pepe", 10)
-                ,
-                new User("jaj","Mi maestra de tercer grado","pepe", 10)
-                ,
-                new User("jaj","Diego de la era del hielo","pepe", 10)
-                ,
-                new User("jaj","Mary Poppins","pepe", 10)
-                ,
-                new User("jaj","Daniel 'el covid nos va a matar' Salas","pepe", 10)
-                ,
-                new User("jaj","kobe Bryant","pepe", 10)
-                ,
-                new User("jaj","Mi maestra de tercer grado","pepe", 10)
-                ,
-                new User("jaj","Diego de la era del hielo","pepe", 10)
-                ,
-                new User("jaj","Mary Poppins","pepe", 10)
-            };
-            return users;
+            this.name = name;
+        }
+        public string getName()
+        {
+            return this.name;
+        }
+
+        public Data_Structures.Stack<string> getNotifications()
+        {
+            return this.notifications;
+        }
+
+        public SimpleList<Recipe> getMymenu()
+        {
+            return this.MyMenu.getOwnedrecipes();
+        }
+
+        public Data_Structures.Stack<Recipe> getNewsfeed()
+        {
+            return this.newsFeed;
         }
     }
 }

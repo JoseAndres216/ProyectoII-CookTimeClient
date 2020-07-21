@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CookTime.Model__Logic_
+namespace CookTime.Model__Logic_.Data_Structures
 {
-    class Node<T>
+    public class Node<T>
     {
         private T data;
         private Node<T> next = null;

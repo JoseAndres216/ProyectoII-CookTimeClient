@@ -11,7 +11,7 @@ namespace CookTime.ViewModel__Abstract_UI_
 
         public UserVM()
         {
-            Users = new User().GetUsers();
+            Users = null;
         }
     }
 }

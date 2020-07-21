@@ -44,7 +44,7 @@ namespace MobileClient.Views__UI_
         private void btnPass_Clicked(object sender, EventArgs e)
         {
             User user = new User();
-            user.name = "Prueba1234";
+            user.setName("Prueba1234");
             Client.getInstance().setUser(user);
             this.Navigation.PushModalAsync(new MainPage());
         }
