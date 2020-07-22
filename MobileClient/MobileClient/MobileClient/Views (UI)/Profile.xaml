@@ -42,9 +42,9 @@
                                        Aspect="AspectFill"
                                        WidthRequest="66"
                                        Grid.RowSpan="2"
-                                       Source="{Binding Image}"/>
+                                       Source="{Binding image}"/>
                                         <Label Grid.Column="1"
-                                       Text= "{Binding Name}"
+                                       Text= "{Binding name}"
                                        FontSize="Medium"
                                        FontAttributes="Bold"
                                        TextColor="White"
@@ -52,7 +52,7 @@
                                         <Label Grid.Row="1"
                                        Grid.Column="1"
                                        VerticalOptions="Start"
-                                       Text = "{Binding User, StringFormat='By: {0}'}"
+                                       Text = "{Binding author, StringFormat='By: {0}'}"
                                        TextColor="White"/>
 
                                     </Grid>

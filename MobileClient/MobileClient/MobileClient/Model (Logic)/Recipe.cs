@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CookTime.Model__Logic_.Data_Structures;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
@@ -11,131 +13,134 @@ namespace MobileClient.Model__Logic_
 * Timing (Entry, main dish, dessert, drink, etc), Difficulty, Tags by type of diet(vegan, celiac, keto),
 * Ingredients, Steps to prepare the dish, Price(estimated), image of the Recipe
 */
-        private string Name { get; set; }
-        private string User { get; set; }
-        private string Type { get; set; }
-        private int Servings { get; set; }
-        private string Duration { get; set; }
-        private string Timing { get; set; }
-        private int Difficulty { get; set; }
-        private string Tags { get; set; }
-        private string Ingredients { get; set; }
-        private string Steps { get; set; }
-        private int Price { get; set; }
-        private string Image { get; set; } //esto tambien se deberia cambiar por una imagen como tal y no como un string
-
+        [JsonProperty] public string name { get; set; }
+        [JsonProperty] public string author { get; set; }
+        [JsonProperty] public string type { get; set; }
+        [JsonProperty] public int servings { get; set; }
+        [JsonProperty] public float duration { get; set; }
+        [JsonProperty] public string timing { get; set; }
+        [JsonProperty] public int difficulty { get; set; }
+        [JsonProperty] public string tags { get; set; }
+        [JsonProperty] public string ingredients { get; set; }
+        [JsonProperty] public string steps { get; set; }
+        [JsonProperty] public int price { get; set; }
+        [JsonProperty] public float rating { get; set; }
+        [JsonProperty] public int likes { get; set; }
+        [JsonProperty] public SimpleList<String> comments { get; set; }
+        [JsonProperty] public string Image { get; set; } //esto tambien se deberia cambiar por una imagen como tal y no como un string
+    
         public Recipe()
         {
         }
 
         public void setName(string name)
         {
-            this.Name = name;
+            this.name = name;
         }
 
         public string getName()
         {
-            return this.Name;
+            return this.name;
         }
 
         public void setUser(string user)
         {
-            this.User = user;
+            this.author = user;
         }
 
         public string getUser()
         {
-            return this.User;
+            return this.author;
         }
 
         public void setType(string type)
         {
-            this.Type = type;
+            this.type = type;
         }
 
         public string getType()
         {
-            return this.Type;
+            return this.type;
         }
 
         public void setServings(int servings)
         {
-            this.Servings = servings;
+            this.servings = servings;
         }
 
         public int getServings()
         {
-            return this.Servings;
+            return this.servings;
         }
 
-        public void setDuration(string duration)
+        public void setDuration(int duration)
         {
-            this.Duration = duration;
+            this.duration = duration;
         }
 
-        public string getDuration()
+        public float getDuration()
         {
-            return this.Duration;
+            return this.duration;
         }
 
         public void setTiming(string timing)
         {
-            this.Timing = timing;
+            this.timing = timing;
         }
 
         public string getTiming()
         {
-            return this.Timing;
+            return this.timing;
         }
 
         public void setDifficulty(int difficulty)
         {
-            this.Difficulty = difficulty;
+            this.difficulty = difficulty;
         }
 
         public int getDifficulty()
         {
-            return this.Difficulty;
+            return this.difficulty;
         }
 
         public void setTags(string tags)
         {
-            this.Tags = tags;
+            this.tags = tags;
         }
 
         public string getTags()
         {
-            return this.Tags;
+            return this.tags;
         }
 
         public void setIngredients(string ingredients)
         {
-            this.Ingredients = ingredients;
+            this.ingredients = ingredients;
         }
 
         public string getIngredients()
         {
-            return this.Ingredients;
+            return this.ingredients;
         }
 
         public void setSteps(string steps)
         {
-            this.Steps = steps;
+            this.steps = steps;
         }
 
         public string getSteps()
         {
-            return this.Steps;
+            return this.steps;
         }
 
         public void setPrice(int price)
         {
-            this.Price = price;
+            this.price = price;
         }
 
         public int getPrice()
         {
-            return this.Price;
+            return this.price;
         }
 
         public void setImage(string image)

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,9 +7,9 @@ namespace CookTime.Model__Logic_.Data_Structures
 {
     public class Node<T>
     {
-        private T data;
-        private Node<T> next = null;
-        private Node<T> prev = null;
+        [JsonProperty] private T data;
+        [JsonProperty] private Node<T> next = null;
+        [JsonProperty] private Node<T> prev = null;
 
         public Node()
         {

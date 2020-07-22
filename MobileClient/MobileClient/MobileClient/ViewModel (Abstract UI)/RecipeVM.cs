@@ -9,22 +9,27 @@ namespace MobileClient.ViewModel__Abstract_UI_
 {
     public class RecipeVM
     {
-        private CookTime.Model__Logic_.Data_Structures.Stack<Recipe> Posts { get; set; }
+        private CookTime.Model__Logic_.Data_Structures.SimpleList<Recipe> post { get; set; }
 
         public RecipeVM()
         {
-            this.Posts = Client.getInstance().getUser().getNewsfeed();
+            Client instance = Client.getInstance();
+            CookTime.Model__Logic_.User user = instance.getUser();
+            CookTime.Model__Logic_.Data_Structures.Stack<Recipe> stack = user.getNewsfeed();
+            CookTime.Model__Logic_.Data_Structures.SimpleList<Recipe> recipesList = stack.getElements();
+
+            this.post = recipesList;
         }
 
-        public CookTime.Model__Logic_.Data_Structures.Stack<Recipe> getPosts()
+        public CookTime.Model__Logic_.Data_Structures.SimpleList<Recipe> getPosts()
         {
-            return this.Posts;
+            return this.post;
         }
 
         public List<Recipe> getPostsIL()
         {
             List<Recipe> myPostsIL = new List<Recipe>();
-            Node<Recipe> current = this.Posts.getElements().getHead();
+            Node<Recipe> current = this.post.getHead();
             while (current != null)
             {
                 myPostsIL.Add(current.getdata());

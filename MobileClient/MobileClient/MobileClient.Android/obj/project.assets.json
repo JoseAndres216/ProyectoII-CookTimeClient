@@ -833,7 +833,7 @@
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "12.0.3",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.7.0.1080"
+          "Xamarin.Forms": "4.7.0.1142"
         },
         "compile": {
           "bin/placeholder/CookTime.dll": {}
@@ -2189,24 +2189,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jose Andrés\\.nuget\\packages\\": {},
+    "C:\\Users\\eduar\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JoseAndresApps\\Proyectos\\CookTimeClient\\Codigo\\MobileClient\\MobileClient\\MobileClient.Android\\MobileClient.Android.csproj",
+      "projectUniqueName": "C:\\Users\\eduar\\Desktop\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient.Android\\MobileClient.Android.csproj",
       "projectName": "MobileClient.Android",
-      "projectPath": "C:\\Users\\JoseAndresApps\\Proyectos\\CookTimeClient\\Codigo\\MobileClient\\MobileClient\\MobileClient.Android\\MobileClient.Android.csproj",
-      "packagesPath": "C:\\Users\\Jose Andrés\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JoseAndresApps\\Proyectos\\CookTimeClient\\Codigo\\MobileClient\\MobileClient\\MobileClient.Android\\obj\\",
+      "projectPath": "C:\\Users\\eduar\\Desktop\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient.Android\\MobileClient.Android.csproj",
+      "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\eduar\\Desktop\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Jose Andrés\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\eduar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2220,8 +2220,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\JoseAndresApps\\Proyectos\\CookTimeClient\\Codigo\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj": {
-              "projectPath": "C:\\Users\\JoseAndresApps\\Proyectos\\CookTimeClient\\Codigo\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj"
+            "C:\\Users\\eduar\\Desktop\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj": {
+              "projectPath": "C:\\Users\\eduar\\Desktop\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj"
             }
           }
         }
@@ -2241,5 +2241,17 @@
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Forms from 4.7.0.1142 to 4.7.0.1080. Reference the package directly from the project to select a different version. \r\n MobileClient.Android -> CookTime -> Xamarin.Forms (>= 4.7.0.1142) \r\n MobileClient.Android -> Xamarin.Forms (>= 4.7.0.1080)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "MonoAndroid,Version=v9.0"
+      ]
+    }
+  ]
 }

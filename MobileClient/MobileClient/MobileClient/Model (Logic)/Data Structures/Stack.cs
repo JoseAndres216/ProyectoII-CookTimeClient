@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,12 +7,7 @@ namespace CookTime.Model__Logic_.Data_Structures
 {
     public class Stack<T>
     {
-        private SimpleList<T> elements;
-
-        public Stack()
-        {
-            elements = new SimpleList<T>();
-        }
+        [JsonProperty] private SimpleList<T> elements;
 
         public void setElements(SimpleList<T> elements)
         {

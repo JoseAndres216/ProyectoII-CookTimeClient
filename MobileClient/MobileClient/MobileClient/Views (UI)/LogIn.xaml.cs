@@ -44,11 +44,13 @@ namespace MobileClient.Views__UI_
 
                 //Get the json from the sever NULL if didn't match
                 String userJson = response.Content.ReadAsStringAsync().Result;
-                
                 //Serialize the json object to a User object and assign it to the Client User
                 User newUser = Newtonsoft.Json.JsonConvert.DeserializeObject<User>(userJson);
                 Client.getInstance().setUser(newUser);
 
+                Console.WriteLine("Recibed Json: " + userJson);
+                Console.WriteLine("Generated user: "+ newUser.ToString());
+                 
 
                 await Navigation.PushModalAsync(new MainPage());
 

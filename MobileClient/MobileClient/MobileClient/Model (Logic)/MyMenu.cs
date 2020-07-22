@@ -1,10 +1,11 @@
 ﻿using CookTime.Model__Logic_.Data_Structures;
+using Newtonsoft.Json;
 
 namespace MobileClient.Model__Logic_
 {
     public class MyMenu
     {
-        private SimpleList<Recipe> ownedRecipes;
+        [JsonProperty] private SimpleList<Recipe> ownedRecipes;
 
         public MyMenu()
         {

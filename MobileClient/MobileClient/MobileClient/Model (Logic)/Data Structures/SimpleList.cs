@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,9 +7,9 @@ namespace CookTime.Model__Logic_.Data_Structures
 {
     public class SimpleList<T>
     {
-        private Node<T> head;
-        private Node<T> tail;
-        private int len;
+        [JsonProperty] private Node<T> head;
+        [JsonProperty] private Node<T> tail;
+        [JsonProperty] private int len;
 
         public SimpleList()
         {
