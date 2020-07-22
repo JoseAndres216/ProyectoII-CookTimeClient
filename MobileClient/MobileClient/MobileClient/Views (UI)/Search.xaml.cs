@@ -87,5 +87,10 @@ namespace MobileClient.Views__UI_
             }
            
         }
+
+        private async void RecoSearchBar_SearchButtonPressed(object sender, EventArgs e)
+        {
+            await this.Navigation.PushModalAsync(new SearchResult());
+        }
     }
 }
