@@ -11,6 +11,7 @@
             <Image Source="TitleBlue.png" Scale="0.9"/>
             <Entry x:Name="txbEmail" Keyboard="Email" FontSize="Medium" Placeholder="Email" BackgroundColor="#EFEFEF"/>
             <Entry x:Name="txbUsername" Keyboard="Default" FontSize="Medium" Placeholder="Username" BackgroundColor="#EFEFEF"/>
+            <Entry x:Name="txbAge" Keyboard="Telephone" FontSize="Medium" Placeholder="Age" BackgroundColor="#EFEFEF"/>
             <Entry x:Name="txbPassword" Keyboard="Default" FontSize="Medium" Placeholder="Password" BackgroundColor="#EFEFEF" IsPassword="True"/>
             <Entry x:Name="txbPasswordConfrmation" Keyboard="Default" FontSize="Medium" Placeholder="Confirm password" BackgroundColor="#EFEFEF" IsPassword="True"/>
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="40">

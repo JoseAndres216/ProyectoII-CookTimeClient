@@ -20,7 +20,7 @@ namespace MobileClient.Views__UI_
         {
             InitializeComponent();
             notificationList = new MyNotificationsVM();
-            NotificationsList.ItemsSource = notificationList.MyNotifications;
+            NotificationsList.ItemsSource = notificationList.getMynotificationsIL();
         }
     }
 }

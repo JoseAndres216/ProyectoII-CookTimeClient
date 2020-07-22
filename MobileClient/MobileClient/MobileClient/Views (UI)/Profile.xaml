@@ -11,9 +11,11 @@
         <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Spacing="20" Scale="0.9">
             <Image Source="TitleBlue.png" Scale="0.5"/>
             <Image Source="StandartProfilePic.png"/>
+            <Label HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="#EFEFEF" x:Name="lblUserName"></Label>
             <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                <Button x:Name="btnChangeImage" WidthRequest="170" Text="Change Image" BackgroundColor="#EFEFEF" FontSize="Small" Clicked="btnChangeImage_Clicked"/>
-                <Button x:Name="btnCreateEnterprise" WidthRequest="170" Text="Create Enterprise" BackgroundColor="#EFEFEF" FontSize="Small" Clicked="btnCreateEnterprise_Clicked"/>
+                <Button x:Name="btnChangeImage" WidthRequest="110" Text="Change Image" BackgroundColor="#EFEFEF" FontSize="Small" Clicked="btnChangeImage_Clicked"/>
+                <Button x:Name="btnBecomeChef" WidthRequest="110" Text="Become Chef" BackgroundColor="#EFEFEF" FontSize="Small" Clicked="btnBecomeChef_Clicked"/>
+                <Button x:Name="btnCreateEnterprise" WidthRequest="110" Text="Create Enterprise" BackgroundColor="#EFEFEF" FontSize="Small" Clicked="btnCreateEnterprise_Clicked"/>
             </StackLayout>
             <Label Text="My Recipes" TextColor="#EFEFEF" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
             <ListView x:Name="MyMenuList" HorizontalOptions="Center" 
@@ -40,9 +42,9 @@
                                        Aspect="AspectFill"
                                        WidthRequest="66"
                                        Grid.RowSpan="2"
-                                       Source="{Binding Image}"/>
+                                       Source="{Binding image}"/>
                                         <Label Grid.Column="1"
-                                       Text= "{Binding Name}"
+                                       Text= "{Binding name}"
                                        FontSize="Medium"
                                        FontAttributes="Bold"
                                        TextColor="White"
@@ -50,7 +52,7 @@
                                         <Label Grid.Row="1"
                                        Grid.Column="1"
                                        VerticalOptions="Start"
-                                       Text = "{Binding User, StringFormat='By: {0}'}"
+                                       Text = "{Binding author, StringFormat='By: {0}'}"
                                        TextColor="White"/>
 
                                     </Grid>

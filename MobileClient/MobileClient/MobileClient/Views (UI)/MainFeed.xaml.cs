@@ -1,4 +1,5 @@
-﻿using CookTime.Views__UI_;
+﻿using CookTime.ViewModel__Abstract_UI_;
+using CookTime.Views__UI_;
 using MobileClient.Model__Logic_;
 using MobileClient.ViewModel__Abstract_UI_;
 using System;
@@ -16,13 +17,21 @@ namespace MobileClient.Views__UI_
         {
             InitializeComponent();
             vM = new RecipeVM();
-            ListPosts.ItemsSource = vM.Posts;
+            ListPosts.ItemsSource = Client.getInstance().getFeedIL();
         }
+        /*
+         * updates the list view with updated recipes 
+         */
+        public void update()
+        {
+           ListPosts.ItemsSource = Client.getInstance().getFeedIL();
+        }
+
         private async void itemSelected(Object sender, ItemTappedEventArgs e)
         {
             var details = e.Item as Recipe;
-            await this.Navigation.PushModalAsync(new PostInfo(details.Name, details.User, details.Type, details.Servings, details.Duration,
-                details.Timing, details.Difficulty, details.Tags, details.Ingredients, details.Steps, details.Price, details.Image));
+            await this.Navigation.PushModalAsync(new PostInfo(details.getName(), details.getUser(), details.getType(), details.getServings(), details.getDuration().ToString(),
+                details.getTiming(), details.getDifficulty().ToString(), details.getTags(), details.getIngredients(), details.getSteps(), details.getPrice(), details.getImage()));
         }
 
         private void ListPosts_ItemSelected(object sender, SelectedItemChangedEventArgs e)

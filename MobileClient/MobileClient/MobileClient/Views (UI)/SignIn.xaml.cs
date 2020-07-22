@@ -1,11 +1,15 @@
 ﻿using System;
+using MobileClient.Model__Logic_;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using CookTime.Model__Logic_;
+using CookTime.ViewModel__Abstract_UI_;
 
 namespace MobileClient.Views__UI_
 {
@@ -29,8 +33,26 @@ namespace MobileClient.Views__UI_
             {
                 if (txbPassword.Text == txbPasswordConfrmation.Text)
                 {
-                    await DisplayAlert("Alright!", "Everithing is setted up for you, go in and take a look!", "Go in!");
-                    await this.Navigation.PushModalAsync(new MainPage());
+                    User user = new User(txbEmail.Text, txbPassword.Text, txbUsername.Text, Int32.Parse(txbAge.Text));
+                    var registerjson = Newtonsoft.Json.JsonConvert.SerializeObject(user);
+                    var content = new StringContent(registerjson, Encoding.UTF8, "application/json");
+                    
+                    
+                    HttpClient client = new HttpClient();
+                    client.BaseAddress = new Uri("http://192.168.100.11:8080/CookTimeServer/user/create?info=" + registerjson);
+                    
+                    HttpResponseMessage response = await client.PutAsync(client.BaseAddress, content);
+                    Console.Out.Write(response.StatusCode.ToString());
+                    if (response.ReasonPhrase.Equals("OK"))
+                    {
+                        await DisplayAlert("Alright!", "Everything is setted up for you, go in and take a look!", "Go in!");
+                        Client.getInstance().setUser(user);
+                        await this.Navigation.PushModalAsync(new MainPage());
+                    }
+                    else
+                    {
+                        await DisplayAlert("Oh Oh!",response.StatusCode.ToString() + "\n" + response.ReasonPhrase, ":(");
+                    }
                 }
                 else
                 {
