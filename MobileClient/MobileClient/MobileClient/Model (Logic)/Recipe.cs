@@ -34,7 +34,10 @@ namespace MobileClient.Model__Logic_
             this.author = author;
             this.name = name;
         }
+        [JsonConstructor] public Recipe()
+        {
 
+        }
         public Recipe(string name, string author, string type, int servings, float duration, string timing, int difficulty, string tags, string ingredients, string steps, int price, float rating, int likes)
         {
             this.author = author;

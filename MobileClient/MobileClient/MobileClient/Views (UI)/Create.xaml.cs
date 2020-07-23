@@ -46,7 +46,17 @@ namespace MobileClient.Views__UI_
         {
             if(!String.IsNullOrEmpty(txbRecipeName.Text) && !String.IsNullOrEmpty(txbEstimatedTime.Text) && !String.IsNullOrEmpty(txbServings.Text) && !String.IsNullOrEmpty(pckDishType.SelectedItem.ToString()) && !String.IsNullOrEmpty(pckTimeofday.SelectedItem.ToString()) && !String.IsNullOrEmpty(pckDifficulty.SelectedItem.ToString()) && !String.IsNullOrEmpty(txbIngredients.Text) && !String.IsNullOrEmpty(txbPreparation.Text))
             {
-                Recipe newRecipe = new Recipe(txbRecipeName.Text, Client.getInstance().getUser().name, pckTimeofday.SelectedItem.ToString(), int.Parse(txbServings.Text), float.Parse(txbEstimatedTime.Text), pckDishType.SelectedItem.ToString(), int.Parse(pckDifficulty.SelectedItem.ToString()), txbTags.Text, txbIngredients.Text, txbPreparation.Text, int.Parse(txbPrice.Text), float.Parse("0"), 0);
+                Recipe newRecipe = new Recipe(txbRecipeName.Text, Client.getInstance().getUser().name, 
+                    pckTimeofday.SelectedItem.ToString(), 
+                    int.Parse(txbServings.Text), 
+                    float.Parse(txbEstimatedTime.Text), pckDishType.SelectedItem.ToString(), 
+                    int.Parse(pckDifficulty.SelectedItem.ToString()), 
+                    txbTags.Text, txbIngredients.Text, txbPreparation.Text, 
+                    int.Parse(txbPrice.Text), 
+                    float.Parse("0"), 
+                    0
+                    );
+
                 var registerjson = Newtonsoft.Json.JsonConvert.SerializeObject(newRecipe);
                 var content = new StringContent(registerjson, Encoding.UTF8, "application/json");
 
@@ -54,7 +64,7 @@ namespace MobileClient.Views__UI_
                 HttpClient client = new HttpClient();
 
                 //Hay que revisar esta direccion del API @Eduardo
-                client.BaseAddress = new Uri("http://192.168.100.11:8080/CookTimeServer/user/recipe/recipe/?info=" + registerjson);
+                client.BaseAddress = new Uri("http://192.168.100.11:8080/CookTimeServer/user/recipe/?recipe=" + registerjson  + "&user="+Client.getInstance().getUser().email);
 
                 HttpResponseMessage response = await client.PutAsync(client.BaseAddress, content);
                 Console.Out.Write(response.StatusCode.ToString());

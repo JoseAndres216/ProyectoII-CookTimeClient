@@ -2,7 +2,7 @@
 using MobileClient.Model__Logic_;
 using Newtonsoft.Json;
 using System;
-
+using System.Net.Http.Headers;
 
 namespace CookTime.Model__Logic_
 {
@@ -59,11 +59,19 @@ namespace CookTime.Model__Logic_
 
         public Data_Structures.Stack<string> getNotifications()
         {
+            if(this.notifications == null)
+            {
+                return new Stack<string>();
+            }
             return this.notifications;
         }
 
         public SimpleList<Recipe> getMymenu()
         {
+            if(this.MyMenu == null)
+            {
+                return new SimpleList<Recipe>();
+            }
             return this.MyMenu.getOwnedrecipes();
         }
 
@@ -76,7 +84,7 @@ namespace CookTime.Model__Logic_
             else
             {
                 Console.Out.WriteLine("Null news feed, User: " + this.email);
-                return null;
+                return new Stack<Recipe>();
             }
 
         }
