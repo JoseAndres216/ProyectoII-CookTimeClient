@@ -2073,7 +2073,6 @@ C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\Mobil
 C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\res\mipmap-xhdpi\appicon.png
 C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\res\mipmap-xxhdpi\appicon.png
 C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\res\mipmap-xxxhdpi\appicon.png
-C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\res\drawable\standartprofilepic.png
 C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\uploadflags.txt
 C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\resolvedassemblies.hash
 C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\CookTime.dll
@@ -2517,3 +2516,7 @@ C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClien
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\res\drawable\ideas.png
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\res\drawable\standartuserpic.png
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\res\drawable\standartenterprisepic.png
+C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\res\drawable\standartfoodpic.png
+C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\res\drawable\ideas.png
+C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\res\drawable\standartenterprisepic.png
+C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\res\drawable\standartuserpic.png

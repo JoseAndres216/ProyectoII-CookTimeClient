@@ -17,7 +17,14 @@ namespace MobileClient.Views__UI_
         {
             InitializeComponent();
             vM = new RecipeVM();
-            ListPosts.ItemsSource = Client.getInstance().getFeedIL();
+            try
+            {
+                ListPosts.ItemsSource = Client.getInstance().getFeedIL();
+            }
+            catch
+            {
+                //null pointer de cuando no hay feed aun
+            }
         }
         /*
          * updates the list view with updated recipes 

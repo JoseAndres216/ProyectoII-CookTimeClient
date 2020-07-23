@@ -19,8 +19,16 @@ namespace MobileClient.Views__UI_
         public Notifications()
         {
             InitializeComponent();
-            notificationList = new MyNotificationsVM();
-            NotificationsList.ItemsSource = notificationList.getMynotificationsIL();
+            try
+            {
+                notificationList = new MyNotificationsVM();
+                NotificationsList.ItemsSource = notificationList.getMynotificationsIL();
+            }
+            catch(Exception e)
+            {
+                //null pointer de cuando no hay notificaciones aun.
+            }
+
         }
     }
 }

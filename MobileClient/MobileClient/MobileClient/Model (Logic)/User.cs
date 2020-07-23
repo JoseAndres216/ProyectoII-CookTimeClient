@@ -13,6 +13,7 @@ namespace CookTime.Model__Logic_
         [JsonProperty] public string name { get; set; }
         [JsonProperty] public string password { get; set; }
         [JsonProperty] public int age { get; set; }
+
         [JsonProperty] public int rating;
         [JsonProperty] public bool isChef;
         [JsonProperty] public Data_Structures.Stack<string> notifications;
@@ -28,6 +29,14 @@ namespace CookTime.Model__Logic_
             this.password = password;
             this.name = name;
             this.age = age;
+
+            this.newsFeed = new Stack<Recipe>();
+            this.notifications = new Stack<string>();
+            this.MyMenu = new MyMenu();
+            this.followers = new SimpleList<User>();
+            this.rating = 0;
+            this.isChef = false;
+            
         }
 
         public User()

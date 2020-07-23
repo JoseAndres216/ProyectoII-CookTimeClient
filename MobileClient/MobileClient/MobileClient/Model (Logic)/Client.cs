@@ -56,6 +56,7 @@ namespace CookTime.ViewModel__Abstract_UI_
          */
         public List<Recipe> getFeedIL()
         {
+            
             Model__Logic_.Data_Structures.Stack<Recipe> temp = this.user.getNewsfeed();
             List<Recipe> result  = new List<Recipe>();
             Node<Recipe> current = temp.getElements().getHead();

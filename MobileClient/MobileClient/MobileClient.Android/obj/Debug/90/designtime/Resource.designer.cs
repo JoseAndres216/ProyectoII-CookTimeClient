@@ -8296,9 +8296,6 @@ namespace MobileClient.Droid
 			// aapt resource value: 0x7F07005A
 			public const int avd_show_password = 2131165274;
 			
-			// aapt resource value: 0x7F070000
-			public const int DefaultEnterprisePic = 2131165184;
-			
 			// aapt resource value: 0x7F07005B
 			public const int design_bottom_navigation_item_background = 2131165275;
 			
@@ -8385,6 +8382,9 @@ namespace MobileClient.Droid
 			
 			// aapt resource value: 0x7F070077
 			public const int search = 2131165303;
+			
+			// aapt resource value: 0x7F070000
+			public const int StandartEnterprisePic = 2131165184;
 			
 			// aapt resource value: 0x7F070001
 			public const int StandartFoodPic = 2131165185;

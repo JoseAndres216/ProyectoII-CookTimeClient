@@ -51,7 +51,7 @@ namespace MobileClient.Views__UI_
                     }
                     else
                     {
-                        await DisplayAlert("Oh Oh!",response.StatusCode.ToString() + "\n" + response.ReasonPhrase, ":(");
+                        await DisplayAlert("Oh Oh!",response.StatusCode.ToString() + "\n" + response.ToString(), ":(");
                     }
                 }
                 else
