@@ -35,6 +35,23 @@ namespace MobileClient.Model__Logic_
             this.name = name;
         }
 
+        public Recipe(string name, string author, string type, int servings, float duration, string timing, int difficulty, string tags, string ingredients, string steps, int price, float rating, int likes)
+        {
+            this.author = author;
+            this.name = name;
+            this.type = type;
+            this.servings = servings;
+            this.duration = duration;
+            this.timing = timing;
+            this.difficulty = difficulty;
+            this.tags = tags;
+            this.ingredients = ingredients;
+            this.steps = steps;
+            this.price = price;
+            this.rating = rating;
+            this.likes = likes;
+        }
+
         public void setName(string name)
         {
             this.name = name;

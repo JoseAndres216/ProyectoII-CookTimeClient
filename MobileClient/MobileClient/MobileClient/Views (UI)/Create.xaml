@@ -10,7 +10,7 @@
              BackgroundColor="#0D1218">
     
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical" Spacing="20" Scale="0.9">
+        <StackLayout Orientation="Vertical" Spacing="15" Scale="0.9">
             <Image Source="TitleBlue.png" VerticalOptions="Start" HorizontalOptions="Start" Scale="0.5"/>
             <Entry x:Name="txbRecipeName" Keyboard="Default" FontSize="Small" Placeholder="Recipe name" BackgroundColor="#EFEFEF"/>
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
@@ -31,6 +31,7 @@
             <Picker x:Name="pckDifficulty" BackgroundColor="#EFEFEF" WidthRequest="200" FontSize="Small"/>
             <Entry x:Name="txbIngredients" Keyboard="Default" FontSize="Small" Placeholder="Ingredients" BackgroundColor="#EFEFEF"/>
             <Entry x:Name="txbPreparation" Keyboard="Default" FontSize="Small" Placeholder="Preparation" BackgroundColor="#EFEFEF"/>
+            <Entry x:Name="txbTags" Keyboard="Default" FontSize="Small" Placeholder="Tags" BackgroundColor="#EFEFEF"/>
             <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="CenterAndExpand">
                 <StackLayout Orientation="Vertical" Spacing="20">
                     <Entry x:Name="txbImageDir" IsEnabled="False" BackgroundColor="#EFEFEF" FontSize="Small" WidthRequest="200"/>
