@@ -6,7 +6,6 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
-             android:TabbedPage.ToolbarPlacement="Bottom"
              BarBackgroundColor="#EFEFEF"
              BarTextColor="#0D1218"
              BackgroundColor="#0D1218"

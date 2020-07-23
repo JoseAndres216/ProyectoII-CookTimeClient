@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\josue\\Documents\\GitHub\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient.Android\\MobileClient.Android.csproj": {}
+    "C:\\Users\\Admin\\source\\repos\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient.Android\\MobileClient.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\josue\\Documents\\GitHub\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient.Android\\MobileClient.Android.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient.Android\\MobileClient.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\josue\\Documents\\GitHub\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient.Android\\MobileClient.Android.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient.Android\\MobileClient.Android.csproj",
         "projectName": "MobileClient.Android",
-        "projectPath": "C:\\Users\\josue\\Documents\\GitHub\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient.Android\\MobileClient.Android.csproj",
-        "packagesPath": "C:\\Users\\josue\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\josue\\Documents\\GitHub\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient.Android\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient.Android\\MobileClient.Android.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\josue\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\josue\\Documents\\GitHub\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj": {
-                "projectPath": "C:\\Users\\josue\\Documents\\GitHub\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj"
+              "C:\\Users\\Admin\\source\\repos\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj": {
+                "projectPath": "C:\\Users\\Admin\\source\\repos\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj"
               }
             }
           }
@@ -54,20 +54,20 @@
         }
       }
     },
-    "C:\\Users\\josue\\Documents\\GitHub\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\josue\\Documents\\GitHub\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj",
         "projectName": "CookTime",
-        "projectPath": "C:\\Users\\josue\\Documents\\GitHub\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj",
-        "packagesPath": "C:\\Users\\josue\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\josue\\Documents\\GitHub\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\josue\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

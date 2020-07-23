@@ -9,8 +9,7 @@
              IconImageSource="search.png">
     <ContentPage.Content>
         <StackLayout Spacing="4" Padding="12">
-            <SearchBar x:Name="RecoSearchBar" SearchButtonPressed="RecoSearchBar_SearchButtonPressed" Placeholder="What recipe are you looking for?" BackgroundColor="#EFEFEF" CancelButtonColor="Gray"/>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                 <Button x:Name="recipesButton" Text="Recipes" HorizontalOptions="Center" Clicked="recipesButton_Clicked" />
                 <Button x:Name="usersButton" Text="Users" HorizontalOptions="Center" Clicked="usersButton_Clicked"/>
                 <Button x:Name="companiesButton" Text="Companies" HorizontalOptions="Center" Clicked="companiesButton_Clicked"/>
@@ -33,6 +32,9 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                <Button x:Name="SearchButton" Text="Search" HorizontalOptions="Center" Clicked="searchButton_Clicked" />
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -8,5 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("CookTime.Views__UI_.SearchPage.xaml", "Views (UI)/SearchPage.xaml", null)]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("CookTime.Views__UI_.SearchPage.xaml", "Views (UI)/SearchPage.xaml", typeof(global::CookTime.Views__UI_.SearchPage))]
 
+namespace CookTime.Views__UI_ {
+    
+    
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views (UI)\\SearchPage.xaml")]
+    public partial class SearchPage : global::Xamarin.Forms.ContentPage {
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private void InitializeComponent() {
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(SearchPage));
+        }
+    }
+}

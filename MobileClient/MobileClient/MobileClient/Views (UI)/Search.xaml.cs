@@ -1,6 +1,4 @@
-﻿using CookTime.Model__Logic_;
-using CookTime.ViewModel__Abstract_UI_;
-using CookTime.Views__UI_;
+﻿using CookTime.Views__UI_;
 using MobileClient.Model__Logic_;
 using MobileClient.ViewModel__Abstract_UI_;
 using System;
@@ -13,84 +11,42 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace MobileClient.Views__UI_
-{
+{ 
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Search : ContentPage
     {
         RecipeVM vM;
-        UserVM UserVM;
-        EnterpriseVM EnterpriseVM;
         public Search()
         {
             InitializeComponent();
             vM = new RecipeVM();
-            UserVM = new UserVM();
-            EnterpriseVM = new EnterpriseVM();
-            RecommendationList.ItemsSource = Client.getInstance().getFeedIL();
-            BindingContext = RecommendationList;
-            
-            recipesButton.IsEnabled = false;
-            usersButton.IsEnabled = true;
-            companiesButton.IsEnabled = true;
-
+            RecommendationList.ItemsSource = vM.Posts;
         }
 
         private void RecommendationList_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             var details = e.Item as Recipe;
-            this.Navigation.PushModalAsync(new PostInfo(details.getName(), details.getUser(), details.getType(), details.getServings(), details.getDuration().ToString(),
-                details.getTiming(), details.getDifficulty().ToString(), details.getTags(), details.getIngredients(), details.getSteps(), details.getPrice(), details.getImage()));
+            this.Navigation.PushModalAsync(new PostInfo(details.Name, details.User, details.Type, details.Servings, details.Duration,
+                details.Timing, details.Difficulty, details.Tags, details.Ingredients, details.Steps, details.Price, details.Image));
         }
 
         private void recipesButton_Clicked(object sender, EventArgs e)
         {
-            RecommendationList.ItemsSource = Client.getInstance().getFeedIL();
 
-            recipesButton.IsEnabled = false;
-            usersButton.IsEnabled = true;
-            companiesButton.IsEnabled = true;
         }
 
         private void usersButton_Clicked(object sender, EventArgs e)
         {
-            RecommendationList.ItemsSource = null;
-            recipesButton.IsEnabled = true;
-            usersButton.IsEnabled = false;
-            companiesButton.IsEnabled = true;
+
         }
 
         private void companiesButton_Clicked(object sender, EventArgs e)
         {
-            RecommendationList.ItemsSource = EnterpriseVM.Enterprises;
 
-            recipesButton.IsEnabled = true;
-            usersButton.IsEnabled = true;
-            companiesButton.IsEnabled = false;
         }
-
-        private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
+        private void searchButton_Clicked(object sender, EventArgs e)
         {
-            if(recipesButton.IsEnabled == false)
-            {
-                var keyword = RecoSearchBar.Text;
-                RecommendationList.ItemsSource = Client.getInstance().getFeedIL().Where(i => i.getName().ToLower().Contains(keyword.ToLower()));
-            }
-            else if(usersButton.IsEnabled == false)
-            {
-                var keyword = RecoSearchBar.Text;
-             RecommendationList.ItemsSource = UserVM.Users.Where(i => i.getName().ToLower().Contains(keyword.ToLower()));
-            }
-            else if(companiesButton.IsEnabled == false)
-            {
-                var keyword = RecoSearchBar.Text;
-                RecommendationList.ItemsSource = EnterpriseVM.Enterprises.Where(i => i.Name.ToLower().Contains(keyword.ToLower()));
-            }
-           
-        }
-
-        private async void RecoSearchBar_SearchButtonPressed(object sender, EventArgs e)
-        {
-            await this.Navigation.PushModalAsync(new SearchResult());
+            this.Navigation.PushModalAsync(new SearchPage());
         }
     }
 }

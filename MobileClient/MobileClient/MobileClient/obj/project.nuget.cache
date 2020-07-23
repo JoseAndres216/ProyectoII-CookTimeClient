@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "4OAYmBJgjmilm4YA32c4lWcOgL91b56Y5ABfX1oH2aGyGfN88QSCVeJ+L2mplTBUQUpL57PM+7/gb1+0xzvKDw==",
+  "dgSpecHash": "k1jv0XZXnvUfVAc7BHP6Iwxe5UJJ/YVbl19/jkOXNnShsr97+QfKXqZhsahswPT/XFxYZ68HufybHoCDpqixTw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\josue\\Documents\\GitHub\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\ProyectoII-CooktimeClient\\MobileClient\\MobileClient\\MobileClient\\MobileClient.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\josue\\.nuget\\packages\\microsoft.bcl\\1.1.10\\microsoft.bcl.1.1.10.nupkg.sha512",
-    "C:\\Users\\josue\\.nuget\\packages\\microsoft.bcl.build\\1.0.14\\microsoft.bcl.build.1.0.14.nupkg.sha512",
-    "C:\\Users\\josue\\.nuget\\packages\\microsoft.net.http\\2.2.29\\microsoft.net.http.2.2.29.nupkg.sha512",
-    "C:\\Users\\josue\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\josue\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\josue\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Users\\josue\\.nuget\\packages\\xamarin.forms\\4.7.0.1142\\xamarin.forms.4.7.0.1142.nupkg.sha512"
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.bcl\\1.1.10\\microsoft.bcl.1.1.10.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.bcl.build\\1.0.14\\microsoft.bcl.build.1.0.14.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.net.http\\2.2.29\\microsoft.net.http.2.2.29.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\xamarin.forms\\4.7.0.1142\\xamarin.forms.4.7.0.1142.nupkg.sha512"
   ],
   "logs": [
     {
