@@ -96,3 +96,4 @@ C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\Mobil
 C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\StartPage.xaml.g.cs
 C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\MobileClient.csproj.CoreCompileInputs.cache
 C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\XamlC.stamp
+C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\MobileClient.csprojAssemblyReference.cache

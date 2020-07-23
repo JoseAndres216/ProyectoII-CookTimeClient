@@ -51,21 +51,22 @@ namespace CookTime.ViewModel__Abstract_UI_
             }
             return instance;
         }
+    
         /*
          * Method for getting the user's feed, converted to a C# list, for updating the user's feed screen. 
          */
         public List<Recipe> getFeedIL()
         {
             
-            Model__Logic_.Data_Structures.Stack<Recipe> temp = this.user.getNewsfeed();
-            List<Recipe> result  = new List<Recipe>();
-            Node<Recipe> current = temp.getElements().getHead();
-            while(current != null)
+            Model__Logic_.Data_Structures.SimpleList<Recipe> temp = this.user.getNewsfeed().getElements();
+            List<Recipe> myMenuIL = new List<Recipe>();
+            Node<Recipe> current = temp.getHead();
+            while (current != null)
             {
-                result.Add(current.getdata());
+                myMenuIL.Add(current.getdata());
                 current = current.getNext();
             }
-            return result;
+            return myMenuIL;
         }
     }
 }

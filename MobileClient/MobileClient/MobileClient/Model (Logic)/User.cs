@@ -1,8 +1,11 @@
 ﻿using CookTime.Model__Logic_.Data_Structures;
+using CookTime.ViewModel__Abstract_UI_;
 using MobileClient.Model__Logic_;
 using Newtonsoft.Json;
 using System;
+using System.Net.Http;
 using System.Net.Http.Headers;
+using Xamarin.Forms.Internals;
 
 namespace CookTime.Model__Logic_
 {
@@ -38,7 +41,29 @@ namespace CookTime.Model__Logic_
             this.isChef = false;
             
         }
+        private async System.Threading.Tasks.Task updateFeedAsync()
+        {
+            try
+            {
+                HttpClient client = new HttpClient();
 
+
+                //     ?  ---> para decir que van parametros SOLO EL PRIMERO    
+                //     &  ---> para separar un parametro de otro. :)
+                client.BaseAddress = new Uri(Client.HTTP_BASE_URL + "user/feed?email=" + this.email );
+
+                HttpResponseMessage response = await client.GetAsync(client.BaseAddress);
+                //Get the json from the sever NULL if didn't match
+                String json = response.Content.ReadAsStringAsync().Result;
+                //Serialize the json object to a User object and assign it to the Client User
+                Stack<Recipe> newFeed = JsonConvert.DeserializeObject<Stack<Recipe>>(json);
+                this.newsFeed = newFeed;
+            }
+            catch(Exception e)
+            {
+                //exception
+            }
+        }
         public User()
         {
 
@@ -77,16 +102,19 @@ namespace CookTime.Model__Logic_
 
         public Data_Structures.Stack<Recipe> getNewsfeed()
         {
+            this.updateFeedAsync();
+
             if (this.newsFeed != null)
             {
                 return this.newsFeed;
             }
+          
             else
-            {
+            {   
                 Console.Out.WriteLine("Null news feed, User: " + this.email);
                 return new Stack<Recipe>();
             }
-
+            
         }
 
         /* 
