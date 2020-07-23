@@ -20,10 +20,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views (UI)\Ideas.xaml.cs">
+      <DependentUpon>Ideas.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Update="Views %28UI%29\PostInfo.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views %28UI%29\SearchResult.xaml">
+    <EmbeddedResource Update="Views %28UI%29\SearchPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views %28UI%29\SignIn.xaml">
@@ -41,7 +47,7 @@
     <EmbeddedResource Update="Views (UI)\Profile.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views (UI)\Search.xaml">
+    <EmbeddedResource Update="Views (UI)\Ideas.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

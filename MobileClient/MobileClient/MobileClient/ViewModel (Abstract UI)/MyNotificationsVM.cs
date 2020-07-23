@@ -24,7 +24,7 @@ namespace MobileClient.ViewModel__Abstract_UI_
         public List<string> getMynotificationsIL()
         {
             List<string> myNotificationsIL = new List<string>();
-            Node<string> current = this.myNotifications.getElements().getHead();
+            Node<string> current = Client.getInstance().getUser().getNotifications().getElements().getHead();
             while (current != null)
             {
                 myNotificationsIL.Add(current.getdata());

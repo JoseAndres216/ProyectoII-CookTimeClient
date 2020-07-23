@@ -11,7 +11,6 @@ namespace CookTime.ViewModel__Abstract_UI_
 
         public EnterpriseVM()
         {
-            Enterprises = new Enterprise().GetEnterprises();
         }
     }
 }

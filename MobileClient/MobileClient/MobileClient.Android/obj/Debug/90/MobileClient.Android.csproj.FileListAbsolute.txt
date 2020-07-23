@@ -1487,7 +1487,6 @@ C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClien
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\ViewCellRenderer_ViewCellContainer_TapGestureListener.java
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\ClipboardChangeListener.java
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\WebAuthenticatorCallbackActivity.java
-C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\res\drawable\standartprofilepic.png
 C:\Users\Admin\source\repos\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\bin\Debug\MobileClient.Android.dll
 C:\Users\Admin\source\repos\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\bin\Debug\MobileClient.Android.pdb
 C:\Users\Admin\source\repos\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\bin\Debug\com.companyname.mobileclient.apk
@@ -2514,3 +2513,7 @@ C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileCli
 C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\System.Net.Http.Primitives.dll
 C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\System.Net.Primitives.dll
 C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\System.Runtime.InteropServices.dll
+C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\res\drawable\standartfoodpic.png
+C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\res\drawable\ideas.png
+C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\res\drawable\standartuserpic.png
+C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\res\drawable\standartenterprisepic.png

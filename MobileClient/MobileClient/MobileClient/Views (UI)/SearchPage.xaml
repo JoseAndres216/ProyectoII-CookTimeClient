@@ -4,12 +4,35 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="CookTime.Views__UI_.SearchPage">
+             x:Class="CookTime.Views__UI_.SearchPage"
+             BackgroundColor="#0D1218">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Orientation="Vertical" Padding="5.0" Spacing="20">
+            <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Center">
+                    <Entry x:Name="txbSearch" BackgroundColor="#EFEFEF" FontSize="Small" WidthRequest="200"></Entry>
+                    <Button x:Name="btnSearch" Text="Search" BackgroundColor="#EFEFEF" Clicked="Button_Clicked"></Button>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Center">
+                <Picker x:Name="pckType" BackgroundColor="#EFEFEF" WidthRequest="150" FontSize="Small" SelectedIndexChanged="pckType_SelectedIndexChanged" HorizontalOptions="Center"/>
+                <Picker x:Name="pckFilter" BackgroundColor="#EFEFEF" WidthRequest="150" FontSize="Small" HorizontalOptions="Center"/>
+            </StackLayout>
+            <ListView x:Name="SearchResultList" HorizontalOptions="Center"
+                      ItemTapped="SearchList_ItemTapped"
+                      HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <Frame CornerRadius="10" BackgroundColor="#383838" Margin="2,4">
+                                    <StackLayout>
+                                        <Label Text="{Binding name}" TextColor="White" FontSize="Medium"/>
+                                    </StackLayout>
+                                </Frame>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

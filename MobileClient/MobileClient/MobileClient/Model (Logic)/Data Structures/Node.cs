@@ -14,6 +14,10 @@ namespace CookTime.Model__Logic_.Data_Structures
         public Node()
         {
         }
+        public Node(T data)
+        {
+            this.data = data;
+        }
 
         public void setNext(Node<T> next)
         {

@@ -25,6 +25,14 @@ namespace MobileClient.Views__UI_
             vM = new MyMenuVM();
             MyMenuList.ItemsSource = vM.getMymenuIL();
             lblUserName.Text = Client.getInstance().getUser().getName();
+            if(Client.getInstance().isUser == true)
+            {
+                ProfilePic.Source = Client.getInstance().getUser().image;
+            }
+            else
+            {
+                ProfilePic.Source = Client.getInstance().getEnterprise().image;
+            }
         }
 
 

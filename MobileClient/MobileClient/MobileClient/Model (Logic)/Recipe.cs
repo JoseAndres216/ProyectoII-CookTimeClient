@@ -27,10 +27,12 @@ namespace MobileClient.Model__Logic_
         [JsonProperty] public float rating { get; set; }
         [JsonProperty] public int likes { get; set; }
         [JsonProperty] public SimpleList<String> comments { get; set; }
-        [JsonProperty] public string Image { get; set; } //esto tambien se deberia cambiar por una imagen como tal y no como un string
-    
-        public Recipe()
+        [JsonProperty] public string image { get; set; } = "StandartFoodPic.png";
+
+        public Recipe(string author, string name)
         {
+            this.author = author;
+            this.name = name;
         }
 
         public void setName(string name)
@@ -145,12 +147,12 @@ namespace MobileClient.Model__Logic_
 
         public void setImage(string image)
         {
-            this.Image = image;
+            this.image = image;
         }
 
         public string getImage()
         {
-            return this.Image;
+            return this.image;
         }
     }
 }

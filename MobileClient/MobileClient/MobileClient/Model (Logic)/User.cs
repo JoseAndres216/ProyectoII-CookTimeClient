@@ -19,6 +19,7 @@ namespace CookTime.Model__Logic_
         [JsonProperty] public SimpleList<User> followers;
         [JsonProperty] public Data_Structures.Stack<Recipe> newsFeed;
         [JsonProperty] public MyMenu MyMenu;
+        public string image = "StandartUserPic.png";
 
 
         public User(string email, string password, string name, int age)

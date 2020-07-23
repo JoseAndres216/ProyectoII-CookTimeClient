@@ -14,6 +14,9 @@ namespace CookTime.ViewModel__Abstract_UI_
         public const string HTTP_BASE_URL = "http://192.168.100.11:8080/CookTimeServer/";
         private static Client instance = null;
         private User user;
+        private Enterprise enterprise = new Enterprise();
+        public bool isUser = false;
+        public bool isEnterprise = false;
 
         private Client()
         {
@@ -26,6 +29,16 @@ namespace CookTime.ViewModel__Abstract_UI_
         }
 
         public User getUser()
+        {
+            return this.user;
+        }
+
+        public void setEnterprise(User user)
+        {
+            this.user = user;
+        }
+
+        public User getEnterprise()
         {
             return this.user;
         }

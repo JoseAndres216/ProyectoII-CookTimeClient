@@ -10,7 +10,7 @@
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Spacing="20" Scale="0.9">
             <Image Source="TitleBlue.png" Scale="0.5"/>
-            <Image Source="StandartProfilePic.png"/>
+            <Image x:Name="ProfilePic"/>
             <Label HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="#EFEFEF" x:Name="lblUserName"></Label>
             <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                 <Button x:Name="btnChangeImage" WidthRequest="110" Text="Change Image" BackgroundColor="#EFEFEF" FontSize="Small" Clicked="btnChangeImage_Clicked"/>

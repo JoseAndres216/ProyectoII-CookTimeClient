@@ -27,10 +27,7 @@ namespace CookTime.Views__UI_
             postIngredients.Text = "- You'll need: \n" + ingredients;
             postSteps.Text = "- Steps: \n" + steps;
             postPrice.Text = "- Suggested price $ " + price;
-            postImage.Source = new UriImageSource()
-            {
-                Uri = new Uri(image)
-            };
+            postImage.Source = image;
 
             pckQuilification.Items.Add("   1");
             pckQuilification.Items.Add("   2");
