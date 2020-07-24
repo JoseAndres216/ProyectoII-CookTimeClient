@@ -8,17 +8,33 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("CookTime.Views__UI_.userInfo.xaml", "Views (UI)/userInfo.xaml", typeof(global::CookTime.Views__UI_.userInfo))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("CookTime.Views__UI_.UserInfo.xaml", "Views (UI)/UserInfo.xaml", typeof(global::CookTime.Views__UI_.UserInfo))]
 
 namespace CookTime.Views__UI_ {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views (UI)\\userInfo.xaml")]
-    public partial class userInfo : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views (UI)\\UserInfo.xaml")]
+    public partial class UserInfo : global::Xamarin.Forms.ContentPage {
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Image userImage;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Button btnFollow;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Label userName;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.ListView MyMenuList;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(userInfo));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(UserInfo));
+            userImage = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Image>(this, "userImage");
+            btnFollow = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "btnFollow");
+            userName = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "userName");
+            MyMenuList = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "MyMenuList");
         }
     }
 }

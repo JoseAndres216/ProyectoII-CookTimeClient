@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CookTime.Views__UI_.UserInfo"
+             BackgroundColor="#0D1218">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Spacing="15" Padding="5.0">
+            <Image Source="TitleBlue.png" Scale="0.5"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="50">
+                <Image x:Name="userImage" HorizontalOptions="Center" WidthRequest="90" HeightRequest="90"/>
+                <Button x:Name="btnFollow" Text="Follow" TextColor="Black" FontSize="Medium" HorizontalOptions="Center" VerticalOptions="Center" Clicked="btnFollow_Clicked" CornerRadius="25"/>
+            </StackLayout>
+            <Label x:Name="userName" Text = "" TextColor="White" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/> 
+            <Label Text="Recipes" TextColor="#EFEFEF" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            <ListView x:Name="MyMenuList" HorizontalOptions="Center" 
+                      HasUnevenRows="True" 
+                      SeparatorVisibility="None"
+                      ItemTapped="MyMenuList_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <Frame CornerRadius="10" BackgroundColor="#383838" Margin="4,4">
+                                    <Grid RowSpacing="10" ColumnSpacing="10">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image HeightRequest="60"
+                                       HorizontalOptions="CenterAndExpand"
+                                       VerticalOptions="CenterAndExpand"
+                                       Aspect="AspectFill"
+                                       WidthRequest="66"
+                                       Grid.RowSpan="2"
+                                       Source="{Binding image}"/>
+                                        <Label Grid.Column="1"
+                                       Text= "{Binding name}"
+                                       FontSize="Medium"
+                                       FontAttributes="Bold"
+                                       TextColor="White"
+                                       VerticalOptions="End"/>
+                                        <Label Grid.Row="1"
+                                       Grid.Column="1"
+                                       VerticalOptions="Start"
+                                       Text = "{Binding author, StringFormat='By: {0}'}"
+                                       TextColor="White"/>
+
+                                    </Grid>
+                                </Frame>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
+

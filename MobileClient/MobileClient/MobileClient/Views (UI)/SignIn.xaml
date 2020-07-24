@@ -9,6 +9,7 @@
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center" Spacing="30" ScaleX="0.9">
             <Image Source="TitleBlue.png" Scale="0.9"/>
+<<<<<<< HEAD
             <Entry x:Name="txbEmail" Keyboard="Email" FontSize="Medium" Placeholder="Email"  BackgroundColor="#383838"  TextColor="White" PlaceholderColor="White"/>
             <Entry x:Name="txbUsername" Keyboard="Default" FontSize="Medium" Placeholder="Username"  BackgroundColor="#383838"  TextColor="White" PlaceholderColor="White"/>
             <Entry x:Name="txbAge" Keyboard="Telephone" FontSize="Medium" Placeholder="Age"  BackgroundColor="#383838"  TextColor="White" PlaceholderColor="White"/>
@@ -17,6 +18,16 @@
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="40">
                 <Button x:Name="btnBack" Text="Back" FontSize="Medium" Clicked="btnBack_Clicked"  CornerRadius="5" BorderColor="White" BorderWidth="2"  BackgroundColor="#383838"  TextColor="White"/>
                 <Button x:Name="btnSignIn" Text="Sign In" FontSize="Medium" Clicked="btnSignIn_Clicked"  CornerRadius="5" BorderColor="White" BorderWidth="2"  BackgroundColor="#383838"  TextColor="White"/>
+=======
+            <Entry x:Name="txbEmail" Keyboard="Email" FontSize="Medium" Placeholder="Email"  BackgroundColor="#0D1218"  TextColor="White" PlaceholderColor="White"/>
+            <Entry x:Name="txbUsername" Keyboard="Default" FontSize="Medium" Placeholder="Username"  BackgroundColor="#0D1218"  TextColor="White" PlaceholderColor="White"/>
+            <Entry x:Name="txbAge" Keyboard="Telephone" FontSize="Medium" Placeholder="Age"  BackgroundColor="#0D1218"  TextColor="White" PlaceholderColor="White"/>
+            <Entry x:Name="txbPassword" Keyboard="Default" FontSize="Medium" Placeholder="Password"  BackgroundColor="#0D1218"  TextColor="White" PlaceholderColor="White" IsPassword="True"/>
+            <Entry x:Name="txbPasswordConfrmation" Keyboard="Default" FontSize="Medium" Placeholder="Confirm password"  BackgroundColor="#0D1218"  TextColor="White" PlaceholderColor="White" IsPassword="True"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="40">
+                <Button x:Name="btnBack" Text="Back" FontSize="Medium" Clicked="btnBack_Clicked"  CornerRadius="5" BorderColor="White" BorderWidth="2"  BackgroundColor="#0D1218"  TextColor="White"/>
+                <Button x:Name="btnSignIn" Text="Sign In" FontSize="Medium" Clicked="btnSignIn_Clicked"  CornerRadius="5" BorderColor="White" BorderWidth="2"  BackgroundColor="#0D1218"  TextColor="White"/>
+>>>>>>> master
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
