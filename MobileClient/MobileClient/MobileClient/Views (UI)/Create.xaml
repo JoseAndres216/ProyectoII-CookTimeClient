@@ -12,34 +12,31 @@
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" Spacing="15" Scale="0.9">
             <Image Source="TitleBlue.png" VerticalOptions="Start" HorizontalOptions="Start" Scale="0.5"/>
-            <Entry x:Name="txbRecipeName" Keyboard="Default" FontSize="Small" Placeholder="Recipe name" BackgroundColor="#EFEFEF"/>
+            <Entry x:Name="txbRecipeName" HorizontalTextAlignment="Center" Keyboard="Default" FontSize="Large" Placeholder="Recipe name"  BackgroundColor="#383838"  TextColor="White" PlaceholderColor="White"/>
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
-                <Entry x:Name="txbEstimatedTime" Keyboard="Default" FontSize="Small" Placeholder="Estimated time" BackgroundColor="#EFEFEF" WidthRequest="150"/>
-                <Entry x:Name="txbServings" Keyboard="Telephone" FontSize="Small" Placeholder="Servings" BackgroundColor="#EFEFEF"/>
+                <Entry x:Name="txbEstimatedTime" Keyboard="Default" FontSize="Medium" Placeholder="Estimated time"  BackgroundColor="#383838"  TextColor="White" PlaceholderColor="White" WidthRequest="150"/>
+                <Entry x:Name="txbServings" Keyboard="Telephone" FontSize="Medium" Placeholder="Servings"  BackgroundColor="#383838"  TextColor="White" PlaceholderColor="White"/>
             </StackLayout>
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="20">
                 <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Spacing="20">
-                    <Label Text="Dish Type" TextColor="#EFEFEF" FontSize="Medium" HorizontalTextAlignment="Center"/>
-                    <Picker x:Name="pckDishType" BackgroundColor="#EFEFEF" WidthRequest="150" FontSize="Small"/>
+                    <Picker x:Name="pckDishType" Title="Dish Type" BackgroundColor="#383838" WidthRequest="150" FontSize="Medium" TitleColor="White" TextColor="White"/>
                 </StackLayout>
                 <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Spacing="20">
-                    <Label Text="Time of day" TextColor="#EFEFEF" FontSize="Medium" HorizontalTextAlignment="Center"/>
-                    <Picker x:Name="pckTimeofday" BackgroundColor="#EFEFEF" WidthRequest="150" FontSize="Small"/>
+                    <Picker x:Name="pckTimeofday" Title="Time of day" BackgroundColor="#383838" WidthRequest="150" FontSize="Medium"  TitleColor="White" TextColor="White"/>
                 </StackLayout>
             </StackLayout>
-            <Label Text="Difficulty" TextColor="#EFEFEF" FontSize="Medium" HorizontalTextAlignment="Start"/>
-            <Picker x:Name="pckDifficulty" BackgroundColor="#EFEFEF" WidthRequest="200" FontSize="Small"/>
-            <Entry x:Name="txbIngredients" Keyboard="Default" FontSize="Small" Placeholder="Ingredients" BackgroundColor="#EFEFEF"/>
-            <Entry x:Name="txbPreparation" Keyboard="Default" FontSize="Small" Placeholder="Preparation" BackgroundColor="#EFEFEF"/>
-            <Entry x:Name="txbTags" Keyboard="Default" FontSize="Small" Placeholder="Tags" BackgroundColor="#EFEFEF"/>
+            <Picker x:Name="pckDifficulty" Title="Diffulty" BackgroundColor="#0D1218" WidthRequest="200"   FontSize="Medium"  TitleColor="White" TextColor="White"/>
+            <Entry x:Name="txbIngredients" Keyboard="Default" FontSize="Medium" Placeholder="Ingredients" BackgroundColor="#383838"  TextColor="White" PlaceholderColor="White"/>
+            <Entry x:Name="txbPreparation" Keyboard="Default" FontSize="Medium" Placeholder="Preparation"  BackgroundColor="#383838"  TextColor="White" PlaceholderColor="White"/>
+            <Entry x:Name="txbTags" Keyboard="Default" FontSize="Medium" Placeholder="Tags"  BackgroundColor="#383838"  TextColor="White" PlaceholderColor="White"/>
             <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="CenterAndExpand">
                 <StackLayout Orientation="Vertical" Spacing="20">
-                    <Entry x:Name="txbImageDir" IsEnabled="False" BackgroundColor="#EFEFEF" FontSize="Small" WidthRequest="200"/>
-                    <Button x:Name="btnPicture" BackgroundColor="#EFEFEF" Text="Select Image" Clicked="btnPicture_Clicked"/>
+                    <Entry x:Name="txbImageDir" IsEnabled="False"  BackgroundColor="#383838"  TextColor="White" PlaceholderColor="White" FontSize="Medium" WidthRequest="200"/>
+                    <Button x:Name="btnPicture" CornerRadius="5" BorderColor="White" BorderWidth="2"  BackgroundColor="#383838"  TextColor="White" Text="Select Image" Clicked="btnPicture_Clicked"/>
                 </StackLayout>
                 <StackLayout Orientation="Vertical" Spacing="20">
-                    <Entry x:Name="txbPrice" Keyboard="Numeric" FontSize="Small" Placeholder="Price" BackgroundColor="#EFEFEF" WidthRequest="200"/>
-                    <Button x:Name="btnPost" BackgroundColor="#EFEFEF" Text="Post it!               " Clicked="btnPost_Clicked"/>
+                    <Entry x:Name="txbPrice" Keyboard="Numeric" FontSize="Medium" Placeholder="Price"  BackgroundColor="#383838"  TextColor="White" PlaceholderColor="White" WidthRequest="200"/>
+                    <Button x:Name="btnPost" CornerRadius="5" BorderColor="White" BorderWidth="2"  BackgroundColor="#383838"  TextColor="White" Text="Post it!             " Clicked="btnPost_Clicked"/>
                 </StackLayout>
             </StackLayout>
         </StackLayout>
