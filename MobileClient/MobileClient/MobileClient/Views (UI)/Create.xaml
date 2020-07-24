@@ -12,7 +12,6 @@
 
     <StackLayout Orientation="Vertical" Spacing="15" Scale="0.9">
         <Image Source="TitleBlue.png" VerticalOptions="Start" HorizontalOptions="Start" Scale="0.5"/>
-
         <Entry x:Name="txbRecipeName" HorizontalTextAlignment="Center" Keyboard="Default" FontSize="Large" Placeholder="Recipe name"  BackgroundColor="#383838"  TextColor="White" PlaceholderColor="White"/>
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
             <Entry x:Name="txbEstimatedTime" Keyboard="Default" FontSize="Medium" Placeholder="Estimated time"  BackgroundColor="#383838"  TextColor="White" PlaceholderColor="White" WidthRequest="150"/>
@@ -32,31 +31,7 @@
         <Entry x:Name="txbTags" Keyboard="Default" FontSize="Medium" Placeholder="Tags"  BackgroundColor="#383838"  TextColor="White" PlaceholderColor="White"/>
         <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="CenterAndExpand">
             <StackLayout Orientation="Vertical" Spacing="20">
-                <Entry x:Name="txbImageDir" IsEnabled="False"  BackgroundColor="#383838"  TextColor="White" PlaceholderColor="White" FontSize="Medium" WidthRequest="200"/>
-                <Button x:Name="btnPicture" CornerRadius="5" BorderColor="White" BorderWidth="2"  BackgroundColor="#383838"  TextColor="White" Text="Select Image" Clicked="btnPicture_Clicked"/>
-            </StackLayout>
-            <StackLayout Orientation="Vertical" Spacing="20">
-                <Entry x:Name="txbPrice" Keyboard="Numeric" FontSize="Medium" Placeholder="Price"  BackgroundColor="#383838"  TextColor="White" PlaceholderColor="White" WidthRequest="200"/>
-                <Button x:Name="btnPost" CornerRadius="5" BorderColor="White" BorderWidth="2"  BackgroundColor="#383838"  TextColor="White" Text="Post it!             " Clicked="btnPost_Clicked"/>
-
-                <Entry x:Name="txbRecipeName" HorizontalTextAlignment="Center" Keyboard="Default" FontSize="Large" Placeholder="Recipe name"  BackgroundColor="#0D1218"  TextColor="White" PlaceholderColor="White"/>
-                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
-                    <Entry x:Name="txbEstimatedTime" Keyboard="Default" FontSize="Small" Placeholder="Estimated time"  BackgroundColor="#0D1218"  TextColor="White" PlaceholderColor="White" WidthRequest="150"/>
-                    <Entry x:Name="txbServings" Keyboard="Telephone" FontSize="Small" Placeholder="Servings"  BackgroundColor="#0D1218"  TextColor="White" PlaceholderColor="White"/>
-                </StackLayout>
-                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="20">
-                    <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Spacing="20">
-                        <Picker x:Name="pckDishType" Title="Dish Type" BackgroundColor="#0D1218" WidthRequest="150" FontSize="Medium" TitleColor="White" TextColor="White"/>
-                    </StackLayout>
-                    <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Spacing="20">
-                        <Picker x:Name="pckTimeofday" Title="Time of day" BackgroundColor="#0D1218" WidthRequest="150" FontSize="Medium"  TitleColor="White" TextColor="White"/>
-                    </StackLayout>
-                </StackLayout>
-                <Label Text="Difficulty" TextColor="#EFEFEF" FontSize="Medium" HorizontalTextAlignment="Start"/>
-                <Picker x:Name="pckDifficulty" BackgroundColor="#EFEFEF" WidthRequest="200" FontSize="Small"/>
-                <Entry x:Name="txbIngredients" Keyboard="Default" FontSize="Small" Placeholder="Ingredients" BackgroundColor="#0D1218"  TextColor="White" PlaceholderColor="White"/>
-                <Entry x:Name="txbPreparation" Keyboard="Default" FontSize="Small" Placeholder="Preparation"  BackgroundColor="#0D1218"  TextColor="White" PlaceholderColor="White"/>
-                <Entry x:Name="txbTags" Keyboard="Default" FontSize="Small" Placeholder="Tags"  BackgroundColor="#0D1218"  TextColor="White" PlaceholderColor="White"/>
+                
                 <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="CenterAndExpand">
                     <StackLayout Orientation="Vertical" Spacing="20">
                         <Entry x:Name="txbImageDir" IsEnabled="False" BackgroundColor="#EFEFEF" FontSize="Small" WidthRequest="200"/>
@@ -70,5 +45,8 @@
                 </StackLayout>
             </StackLayout>
         </StackLayout>
+    </StackLayout>
+
+
 
 </ContentPage>

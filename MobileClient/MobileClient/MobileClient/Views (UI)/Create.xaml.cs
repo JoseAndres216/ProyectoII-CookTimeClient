@@ -68,7 +68,7 @@ namespace MobileClient.Views__UI_
 
                 HttpResponseMessage response = await client.PutAsync(client.BaseAddress, content);
                 Console.Out.Write(response.StatusCode.ToString());
-                if (response.ReasonPhrase.Equals("OK"))
+                if (response.ReasonPhrase.Equals("Created"))
                 {
                     await DisplayAlert("Alright!", "Your recipe has been created!", "Got ya");
                     await this.Navigation.PushModalAsync(new MainPage());

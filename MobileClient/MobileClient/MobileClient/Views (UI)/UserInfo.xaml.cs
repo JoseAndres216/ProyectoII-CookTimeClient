@@ -32,8 +32,7 @@ namespace CookTime.Views__UI_
         private async void MyMenuList_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             var details = e.Item as Recipe;
-            await this.Navigation.PushModalAsync(new PostInfo(details.getName(), details.getUser(), details.getType(), details.getServings(), details.getDuration().ToString(),
-                details.getTiming(), details.getDifficulty().ToString(), details.getTags(), details.getIngredients(), details.getSteps(), details.getPrice(), details.getImage()));
+            await this.Navigation.PushModalAsync(new PostInfo(details));
         }
     }
 }

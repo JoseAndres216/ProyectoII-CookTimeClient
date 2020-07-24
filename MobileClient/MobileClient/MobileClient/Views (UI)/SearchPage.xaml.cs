@@ -21,8 +21,7 @@ namespace CookTime.Views__UI_
         private void SearchList_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             var details = e.Item as Recipe;
-            this.Navigation.PushModalAsync(new PostInfo(details.name, details.author, details.type, details.servings, details.duration.ToString(),
-                details.timing, details.difficulty.ToString(), details.tags, details.ingredients, details.steps, details.price, details.image));
+            this.Navigation.PushModalAsync(new PostInfo(details));
         }
 
         private void pckType_SelectedIndexChanged(object sender, EventArgs e)

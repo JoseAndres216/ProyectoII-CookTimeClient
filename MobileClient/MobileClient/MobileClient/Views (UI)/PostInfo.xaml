@@ -33,7 +33,7 @@
                 <Button x:Name="btnQualify" Text="Qualify" TextColor="Black" Clicked="btnQualify_Clicked"  BackgroundColor="#EFEFEF" FontSize="Small" HorizontalOptions="Center"/>
                 <Picker x:Name="pckQuilification" HorizontalOptions="Center" FontSize="Medium" TextColor="Black" BackgroundColor="#EFEFEF" WidthRequest="50"/>
             </StackLayout>
-            <Button x:Name="btnSeeComentaries" HorizontalOptions="Center" Text="See all the commentaries" BackgroundColor="#0D1218" TextColor="#EFEFEF" Clicked="btnSeeComentaries_Clicked"/>
+            <Button x:Name="btnSeeComentaries" HorizontalOptions="Center" Text="Comments" BackgroundColor="#0D1218" TextColor="#EFEFEF" Clicked="btnSeeComentaries_Clicked"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

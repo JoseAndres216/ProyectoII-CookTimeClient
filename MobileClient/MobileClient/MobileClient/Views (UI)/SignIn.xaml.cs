@@ -43,7 +43,7 @@ namespace MobileClient.Views__UI_
                     
                     HttpResponseMessage response = await client.PutAsync(client.BaseAddress, content);
                     Console.Out.Write(response.StatusCode.ToString());
-                    if (response.ReasonPhrase.Equals("OK"))
+                    if (response.ReasonPhrase.Equals("Created"))
                     {
                         await DisplayAlert("Alright!", "Everything is setted up for you, go in and take a look!", "Go in!");
                         Client.getInstance().setUser(user);

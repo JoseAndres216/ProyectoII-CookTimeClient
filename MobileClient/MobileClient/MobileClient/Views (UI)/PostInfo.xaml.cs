@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using CookTime.ViewModel__Abstract_UI_;
+using MobileClient.Model__Logic_;
+using System;
+using System.Net.Http;
 using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,22 +11,23 @@ namespace CookTime.Views__UI_
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PostInfo : ContentPage
     {
-        public PostInfo(string name, string user, string type, int servings, string duration, string timing, string difficulty,
-            string tags, string ingredients, string steps, int price, string image)
+        public Recipe recipe;
+        public PostInfo(Recipe recipe)
         {
+            this.recipe = recipe;
             InitializeComponent();
-            postName.Text = name;
-            postUser.Text = "- By: " + user;
-            postType.Text = "- Type: " + type;
-            postServings.Text = "- It serves for " + servings + " people";
-            postDuration.Text = "- It takes: " + duration;
-            postTiming.Text = "- Its a " + timing;
-            postDifficulty.Text = "- From one to ten this is a: " + difficulty;
-            postTags.Text = "- Tags: " + tags;
-            postIngredients.Text = "- You'll need: \n" + ingredients;
-            postSteps.Text = "- Steps: \n" + steps;
-            postPrice.Text = "- Suggested price $ " + price;
-            postImage.Source = image;
+            postName.Text = recipe.name;
+            postUser.Text = "- By: " + recipe.author;
+            postType.Text = "- Type: " + recipe.type;
+            postServings.Text = "- It serves for " + recipe.servings + " people";
+            postDuration.Text = "- It takes: " + recipe.duration;
+            postTiming.Text = "- Its a " + recipe.timing;
+            postDifficulty.Text = "- From one to ten this is a: " + recipe.difficulty;
+            postTags.Text = "- Tags: " + recipe.tags;
+            postIngredients.Text = "- You'll need: \n" + recipe.ingredients;
+            postSteps.Text = "- Steps: \n" + recipe.steps;
+            postPrice.Text = "- Suggested price $ " + recipe.price;
+            postImage.Source = recipe.image;
 
             pckQuilification.Items.Add("   1");
             pckQuilification.Items.Add("   2");
@@ -48,10 +48,31 @@ namespace CookTime.Views__UI_
             this.Navigation.PopModalAsync();
         }
 
-        private void btnShare_Clicked(object sender, EventArgs e)
+        private async void btnShare_Clicked(object sender, EventArgs e)
         {
-            btnShare.Text = "Shared!";
-            btnShare.IsEnabled = false;
+            try
+            { 
+                System.Net.Http.HttpClient client = new HttpClient();
+                client.BaseAddress = new Uri(Client.HTTP_BASE_URL + "user/recipe/share?recipe=" + this.recipe.name + "&user=" + Client.getInstance().getUser().email);
+                var content = new StringContent("", Encoding.UTF8, "application/json");
+                HttpResponseMessage response = await client.PostAsync(client.BaseAddress, content);
+                Console.Out.Write(response.StatusCode.ToString());
+                if (response.ReasonPhrase.Equals("Accepted"))
+                {
+                    btnShare.Text = "Shared!";
+                    btnShare.IsEnabled = false;
+                }
+                else
+                {
+                    await DisplayAlert("Error", response.ReasonPhrase, "OK");
+                }
+            }
+            catch
+            {
+                await DisplayAlert("Error","Something went wrong", "OK");
+            }
+
+
         }
 
         private async void btnQualify_Clicked(object sender, EventArgs e)
@@ -68,14 +89,10 @@ namespace CookTime.Views__UI_
             }
         }
 
-        private void btnComment_Clicked(object sender, EventArgs e)
-        {
-
-        }
-
+ 
         private void btnSeeComentaries_Clicked(object sender, EventArgs e)
         {
-
+            this.Navigation.PushModalAsync(new CommentSection(recipe));
         }
     }
 }

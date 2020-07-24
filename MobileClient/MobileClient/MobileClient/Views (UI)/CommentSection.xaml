@@ -1,0 +1,46 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CookTime.Views__UI_.CommentSection" BackgroundColor="#0D1218">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Scale="0.9" Spacing="10">
+            <Image Source="TitleBlue.png" VerticalOptions="Start" HorizontalOptions="Center" Scale="0.5"/>
+            <ListView x:Name="NotificationsList" HorizontalOptions="Center" 
+                      HasUnevenRows="True" 
+                      SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <Frame CornerRadius="10" BackgroundColor="#383838" Margin="4,4">
+                                    <Grid RowSpacing="10" ColumnSpacing="10">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.Row="0"
+                                       Grid.Column="1"
+                                       VerticalOptions="Start"
+                                       Text = "{Binding Path=.}"
+                                       TextColor="White"
+                                       FontSize="Medium"/>
+                                    </Grid>
+                                </Frame>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10">
+                <Entry x:Name="txbMessage" BackgroundColor="#EFEFEF" TextColor="black" WidthRequest="250"></Entry>
+                <Button x:Name="btnComment" BackgroundColor="#EFEFEF" Text="Comment" TextColor="black" Clicked="btnComment_ClickedAsync" ></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -68,17 +68,12 @@ C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileCli
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\CreateEnterprise.xaml.g.cs
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\MobileClient.csproj.CoreCompileInputs.cache
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\XamlC.stamp
-C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\bin\Debug\netstandard2.1\CookTime.deps.json
-C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\bin\Debug\netstandard2.1\CookTime.dll
-C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\bin\Debug\netstandard2.1\ref\CookTime.dll
-C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\bin\Debug\netstandard2.1\CookTime.pdb
-C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\MobileClient.AssemblyInfoInputs.cache
-C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\MobileClient.AssemblyInfo.cs
-C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\CookTime.dll
-C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\ref\CookTime.dll
-C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\CookTime.pdb
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\SearchPage.xaml.g.cs
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\Ideas.xaml.g.cs
+C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\Ideas.xaml.g.cs
+C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\SearchPage.xaml.g.cs
+C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\UserInfo.xaml.g.cs
+C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\MobileClient.csprojAssemblyReference.cache
 C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\App.xaml.g.cs
 C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\Create.xaml.g.cs
 C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\CreateEnterprise.xaml.g.cs
@@ -92,9 +87,16 @@ C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\Mobil
 C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\SearchPage.xaml.g.cs
 C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\SignIn.xaml.g.cs
 C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\StartPage.xaml.g.cs
+C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\UserInfo.xaml.g.cs
+C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\MobileClient.AssemblyInfoInputs.cache
+C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\MobileClient.AssemblyInfo.cs
 C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\MobileClient.csproj.CoreCompileInputs.cache
+C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\bin\Debug\netstandard2.1\CookTime.deps.json
+C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\bin\Debug\netstandard2.1\CookTime.dll
+C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\CookTime.dll
+C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\ref\CookTime.dll
+C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\CookTime.pdb
+C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\bin\Debug\netstandard2.1\ref\CookTime.dll
+C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\bin\Debug\netstandard2.1\CookTime.pdb
 C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\XamlC.stamp
-C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\MobileClient.csprojAssemblyReference.cache
-C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\Ideas.xaml.g.cs
-C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\SearchPage.xaml.g.cs
-C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\UserInfo.xaml.g.cs
+C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\CommentSection.xaml.g.cs

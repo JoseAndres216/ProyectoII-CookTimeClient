@@ -8,22 +8,17 @@
              BackgroundColor="#0D1218">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center" Spacing="30" ScaleX="0.9">
-            <Image Source="TitleBlue.png" Scale="0.9"/>
+            <Image Source="TitleBlue.png" Scale="0.9"></Image>
 
-            <Entry x:Name="txbUsername" Keyboard="Default" FontSize="Medium" Placeholder="Username" BackgroundColor="#383838"  TextColor="White" PlaceholderColor="White"/>
-            <Entry x:Name="txbPassword" Keyboard="Default" FontSize="Medium" Placeholder="Password" BackgroundColor="#383838" IsPassword="True" TextColor="White"  PlaceholderColor="White" />
+            <Entry x:Name="txbUsername" Keyboard="Default" FontSize="Medium" Placeholder="Username" BackgroundColor="#0D1218"  TextColor="White" PlaceholderColor="White"/>
+            <Entry x:Name="txbPassword" Keyboard="Default" FontSize="Medium" Placeholder="Password" BackgroundColor="#0D1218" IsPassword="True" TextColor="White"  PlaceholderColor="White" />
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="40">
-                <Button x:Name="btnBack" Text="Back" FontSize="Medium" Clicked="btnBack_Clicked" CornerRadius="5" BorderColor="White" BorderWidth="2"  BackgroundColor="#383838"  TextColor="White" />
-                <Button x:Name="btnLogIn" Text="Log In" FontSize="Medium" Clicked="btnLogIn_Clicked" CornerRadius="5" BorderColor="White" BorderWidth="2"  BackgroundColor="#383838"  TextColor="White" />
+                <Button x:Name="btnBack" Text="Back" FontSize="Medium" Clicked="btnBack_Clicked" CornerRadius="5" BorderColor="White" BorderWidth="2"  BackgroundColor="#0D1218"  TextColor="White" />
+                <Button x:Name="btnLogIn" Text="Log In" FontSize="Medium" Clicked="btnLogIn_Clicked" CornerRadius="5" BorderColor="White" BorderWidth="2"  BackgroundColor="#0D1218"  TextColor="White" />
 
-                <Entry x:Name="txbUsername" Keyboard="Default" FontSize="Medium" Placeholder="Username" BackgroundColor="#0D1218"  TextColor="White" PlaceholderColor="White"/>
-                <Entry x:Name="txbPassword" Keyboard="Default" FontSize="Medium" Placeholder="Password" BackgroundColor="#0D1218" IsPassword="True" TextColor="White"  PlaceholderColor="White" />
-                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="40">
-                    <Button x:Name="btnBack" Text="Back" FontSize="Medium" Clicked="btnBack_Clicked" CornerRadius="5" BorderColor="White" BorderWidth="2"  BackgroundColor="#0D1218"  TextColor="White" />
-                    <Button x:Name="btnLogIn" Text="Log In" FontSize="Medium" Clicked="btnLogIn_Clicked" CornerRadius="5" BorderColor="White" BorderWidth="2"  BackgroundColor="#0D1218"  TextColor="White" />
-
-                </StackLayout>
             </StackLayout>
+
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
     

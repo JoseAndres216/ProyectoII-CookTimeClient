@@ -33,10 +33,9 @@ namespace MobileClient.Views__UI_
             if (recipesButton.IsEnabled == false)
             {
                 var details = e.Item as Recipe;
-                this.Navigation.PushModalAsync(new PostInfo(details.name, details.author, details.type, details.servings, details.duration.ToString(),
-                    details.timing, details.difficulty.ToString(), details.tags, details.ingredients, details.steps, details.price, details.image));
+                this.Navigation.PushModalAsync(new PostInfo(details));
             }
-            else if (usersButton.IsEnabled == false)
+            else if (!usersButton.IsEnabled)
             {
                 var details = e.Item as User;
                 this.Navigation.PushModalAsync(new UserInfo(details.name, details.image));
