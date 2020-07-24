@@ -51,8 +51,8 @@ namespace CookTime.Views__UI_
         private async void btnShare_Clicked(object sender, EventArgs e)
         {
             try
-            { 
-                System.Net.Http.HttpClient client = new HttpClient();
+            {
+                HttpClient client = new HttpClient();
                 client.BaseAddress = new Uri(Client.HTTP_BASE_URL + "user/recipe/share?recipe=" + this.recipe.name + "&user=" + Client.getInstance().getUser().email);
                 var content = new StringContent("", Encoding.UTF8, "application/json");
                 HttpResponseMessage response = await client.PostAsync(client.BaseAddress, content);
@@ -69,7 +69,7 @@ namespace CookTime.Views__UI_
             }
             catch
             {
-                await DisplayAlert("Error","Something went wrong", "OK");
+                await DisplayAlert("Error", "Something went wrong", "OK");
             }
 
 
@@ -77,19 +77,45 @@ namespace CookTime.Views__UI_
 
         private async void btnQualify_Clicked(object sender, EventArgs e)
         {
-            if (pckQuilification.SelectedItem.ToString() != "Qualification")
+            try
             {
-                btnQualify.Text = "Thanks!";
-                btnQualify.IsEnabled = false;
-                pckQuilification.IsEnabled = false;
+                int rate;
+                if (pckQuilification.SelectedItem.ToString() != "Qualification")
+                {
+                    rate = Int16.Parse(pckQuilification.SelectedItem.ToString());
+                   
+
+                    HttpClient client = new HttpClient();
+                    client.BaseAddress = new Uri(Client.HTTP_BASE_URL + "user/recipe/like?recipe=" + this.recipe.name + "&user=" + Client.getInstance().getUser().email);
+                    var content = new StringContent("", Encoding.UTF8, "application/json");
+                    HttpResponseMessage response = await client.PostAsync(client.BaseAddress, content);
+                    Console.Out.Write(response.StatusCode.ToString());
+                    if (response.ReasonPhrase.Equals("Accepted"))
+                    {
+                        btnQualify.Text = "Thanks!";
+                        btnQualify.IsEnabled = false;
+                        pckQuilification.IsEnabled = false;
+                    }
+                    else
+                    {
+                        await DisplayAlert("Error", response.ReasonPhrase, "OK");
+                    }
+                }
+                else
+                {
+                    await DisplayAlert("Ups...", "You have to choose a qualification first, go back, select it and touch the qualify button", "OK");
+                }
+                
             }
-            else
+            catch
             {
-                await DisplayAlert("Ups...", "You have to choose a qualification first, go back, select it and touch the qualify button", "OK");
+                await DisplayAlert("Error", "Something went wrong", "OK");
             }
+
+
         }
 
- 
+
         private void btnSeeComentaries_Clicked(object sender, EventArgs e)
         {
             this.Navigation.PushModalAsync(new CommentSection(recipe));
