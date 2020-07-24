@@ -86,11 +86,7 @@ namespace MobileClient.Views__UI_
 
         private async void btnPicture_Clicked(object sender, EventArgs e)
         {
-            Recipe newRecipe = new Recipe(txbRecipeName.Text, Client.getInstance().getUser().name, pckTimeofday.SelectedItem.ToString(), int.Parse(txbServings.Text), float.Parse(txbEstimatedTime.Text), pckDishType.SelectedItem.ToString(), int.Parse(pckDifficulty.SelectedItem.ToString()), txbTags.Text, txbIngredients.Text, txbPreparation.Text, int.Parse(txbPrice.Text), float.Parse("0"), 0);
-            var registerjson = Newtonsoft.Json.JsonConvert.SerializeObject(newRecipe);
-            var content = new StringContent(registerjson, Encoding.UTF8, "application/json");
-
-            DisplayAlert("Lo logro?", registerjson, "IDK");
+        
         }
     }
 }

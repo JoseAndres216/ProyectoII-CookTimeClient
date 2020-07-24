@@ -1,4 +1,5 @@
-﻿using CookTime.Views__UI_;
+﻿using CookTime.Model__Logic_;
+using CookTime.Views__UI_;
 using MobileClient.Model__Logic_;
 using MobileClient.ViewModel__Abstract_UI_;
 using System;
@@ -29,9 +30,18 @@ namespace MobileClient.Views__UI_
 
         private void RecommendationList_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            var details = e.Item as Recipe;
-            this.Navigation.PushModalAsync(new PostInfo(details.name, details.author, details.type, details.servings, details.duration.ToString(),
-                details.timing, details.difficulty.ToString(), details.tags, details.ingredients, details.steps, details.price, details.image));
+            if (recipesButton.IsEnabled == false)
+            {
+                var details = e.Item as Recipe;
+                this.Navigation.PushModalAsync(new PostInfo(details.name, details.author, details.type, details.servings, details.duration.ToString(),
+                    details.timing, details.difficulty.ToString(), details.tags, details.ingredients, details.steps, details.price, details.image));
+            }
+            else if (usersButton.IsEnabled == false)
+            {
+                var details = e.Item as User;
+                this.Navigation.PushModalAsync(new UserInfo(details.name, details.image));
+            }
+
         }
 
         private void recipesButton_Clicked(object sender, EventArgs e)

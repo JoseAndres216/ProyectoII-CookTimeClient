@@ -49,8 +49,8 @@ namespace MobileClient.Views__UI_
                 Client.getInstance().setUser(newUser);
 
                 Console.WriteLine("Recibed Json: " + userJson);
-                Console.WriteLine("Generated user: "+ newUser.ToString());
-                 
+                Console.WriteLine("Generated user: " + newUser.ToString());
+
 
                 await Navigation.PushModalAsync(new MainPage());
 

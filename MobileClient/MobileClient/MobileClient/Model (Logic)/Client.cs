@@ -68,5 +68,20 @@ namespace CookTime.ViewModel__Abstract_UI_
             }
             return myMenuIL;
         }
+
+        public List<Recipe> getUserMenuIL()
+        {
+            Model__Logic_.Data_Structures.SimpleList<Recipe> temp = new SimpleList<Recipe>();
+            temp.setHead(new Node<Recipe>());
+            temp.getHead().setData(new Recipe("uno","dos"));
+            List<Recipe> UserMenu = new List<Recipe>();
+            Node<Recipe> current = temp.getHead();
+            while (current != null)
+            {
+                UserMenu.Add(current.getdata());
+                current = current.getNext();
+            }
+            return UserMenu;
+        }
     }
 }
