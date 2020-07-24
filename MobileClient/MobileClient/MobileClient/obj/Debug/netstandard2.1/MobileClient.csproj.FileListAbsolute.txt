@@ -100,3 +100,5 @@ C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\Mobil
 C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\bin\Debug\netstandard2.1\CookTime.pdb
 C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\XamlC.stamp
 C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\CommentSection.xaml.g.cs
+C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\CommentSection.xaml.g.cs
+C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\UserInfo.xaml.g.cs

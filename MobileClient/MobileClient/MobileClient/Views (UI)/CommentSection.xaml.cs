@@ -1,4 +1,5 @@
-﻿using CookTime.ViewModel__Abstract_UI_;
+﻿using CookTime.Model__Logic_.Data_Structures;
+using CookTime.ViewModel__Abstract_UI_;
 using MobileClient.Model__Logic_;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,13 @@ namespace CookTime.Views__UI_
         public CommentSection()
         {
             InitializeComponent();
+            Node<string> current = recipe.comments.getHead();
+            List<string> commentsL = new List<string>();
+            while(current != null)
+            {
+                commentsL.Add(current.getdata());
+            }
+            CommentsList.ItemsSource = commentsL;
         }
 
         public CommentSection(Recipe recipe)

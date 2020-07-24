@@ -7,31 +7,36 @@
              x:Class="CookTime.Views__UI_.PostInfo"
              BackgroundColor="#0D1218">
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical" Padding="5.0">
-            <StackLayout Orientation="Horizontal" Padding="5,0">
-                <ImageButton Source="feed.png" VerticalOptions="Center" HorizontalOptions="Center" Clicked="ImageButton_Clicked"/>
-                <Image x:Name="postImage" HeightRequest="100" WidthRequest="100"/>
-                <Label x:Name="postName" Text = "" TextColor="White" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+        <StackLayout Orientation="Vertical" Padding="5.0" Scale="0.98">
+            <StackLayout Orientation="Horizontal" Padding="5,0" HorizontalOptions="Center">
+                <Image x:Name="postImage" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center"/>
+                <Label x:Name="postName" Text = "" TextColor="White" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HorizontalOptions="Center"/>
             </StackLayout>
-
-            <ScrollView Orientation="Vertical" BackgroundColor="#efefef" >
-                <StackLayout>
-                    <Label x:Name="postUser" Text = "" TextColor="Black" Margin="20, 10, 20, 3" FontSize="Medium"/>
-                    <Label x:Name="postType" Text="" TextColor="Black" Margin="20, 3" FontSize="Medium"/>
-                    <Label x:Name="postServings" Text = "" TextColor="Black" Margin="20, 3" FontSize="Medium"/>
-                    <Label x:Name="postDuration" Text="" TextColor="Black" Margin="20, 3" FontSize="Medium"/>
-                    <Label x:Name="postTiming" Text = "" TextColor="Black" Margin="20, 3" FontSize="Medium"/>
-                    <Label x:Name="postDifficulty" Text="" TextColor="Black" Margin="20, 3" FontSize="Medium"/>
-                    <Label x:Name="postTags" Text = "" TextColor="Black" Margin="20, 3" FontSize="Medium"/>
-                    <Label x:Name="postIngredients" Text="" TextColor="Black" Margin="20, 3" FontSize="Medium"/>
-                    <Label x:Name="postSteps" Text="" TextColor="Black" Margin="20, 3" FontSize="Medium"/>
-                    <Label x:Name="postPrice" Text = "" TextColor="Black" Margin="20, 3, 20, 10" FontSize="Medium"/>
-                </StackLayout>
-            </ScrollView>
-            <StackLayout Orientation="Horizontal" Padding="5.0" HorizontalOptions="CenterAndExpand">
-                <Button x:Name="btnShare" Text="Share recipe" TextColor="Black" Clicked="btnShare_Clicked" BackgroundColor="#EFEFEF" FontSize="Small" HorizontalOptions="Center"/>
-                <Button x:Name="btnQualify" Text="Qualify" TextColor="Black" Clicked="btnQualify_Clicked"  BackgroundColor="#EFEFEF" FontSize="Small" HorizontalOptions="Center"/>
+            <StackLayout BackgroundColor="#EFEFEF">
+                <ScrollView Orientation="Vertical" BackgroundColor="#0D1218" Scale="0.98">
+                    <StackLayout>
+                        <Label x:Name="postUser" Text = "" TextColor="#EFEFEF" Margin="20, 10, 20, 3" FontSize="Medium"/>
+                        <Label x:Name="postType" Text="" TextColor="#EFEFEF" Margin="20, 3" FontSize="Medium"/>
+                        <Label x:Name="postServings" Text = "" TextColor="#EFEFEF" Margin="20, 3" FontSize="Medium"/>
+                        <Label x:Name="postDuration" Text="" TextColor="#EFEFEF" Margin="20, 3" FontSize="Medium"/>
+                        <Label x:Name="postTiming" Text = "" TextColor="#EFEFEF" Margin="20, 3" FontSize="Medium"/>
+                        <Label x:Name="postDifficulty" Text="" TextColor="#EFEFEF" Margin="20, 3" FontSize="Medium"/>
+                        <Label x:Name="postTags" Text = "" TextColor="#EFEFEF" Margin="20, 3" FontSize="Medium"/>
+                        <Label x:Name="postIngredients" Text="" TextColor="#EFEFEF" Margin="20, 3" FontSize="Medium"/>
+                        <Label x:Name="postSteps" Text="" TextColor="#EFEFEF" Margin="20, 3" FontSize="Medium"/>
+                        <Label x:Name="postPrice" Text = "" TextColor="#EFEFEF" Margin="20, 3, 20, 10" FontSize="Medium"/>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Padding="5.0">
+                <Label x:Name="postLikes" Text = "Likes: " TextColor="#EFEFEF" Margin="20, 10, 20, 3" FontSize="Medium" HorizontalOptions="Start"/>
+                <Label x:Name="postRating" Text = "Average rating: " TextColor="#EFEFEF" Margin="20, 10, 20, 3" FontSize="Medium" HorizontalOptions="End"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Scale="0.95">
+                <Button x:Name="btnShare" Text="Share recipe" Clicked="btnShare_Clicked" FontSize="Small" HorizontalOptions="Center" CornerRadius="5" BorderColor="#EFEFEF" BorderWidth="2"  BackgroundColor="#0D1218"  TextColor="#EFEFEF"/>
+                <Button x:Name="btnQualify" Text="Qualify" Clicked="btnQualify_Clicked" FontSize="Small" HorizontalOptions="Center" CornerRadius="5" BorderColor="#EFEFEF" BorderWidth="2"  BackgroundColor="#0D1218"  TextColor="#EFEFEF"/>
                 <Picker x:Name="pckQuilification" HorizontalOptions="Center" FontSize="Medium" TextColor="Black" BackgroundColor="#EFEFEF" WidthRequest="50"/>
+                <Button x:Name="btnLike" Text="Like" FontSize="Small" HorizontalOptions="Center" Clicked="btnLike_Clicked" CornerRadius="5" BorderColor="#EFEFEF" BorderWidth="2"  BackgroundColor="#0D1218"  TextColor="#EFEFEF"/>
             </StackLayout>
             <Button x:Name="btnSeeComentaries" HorizontalOptions="Center" Text="Comments" BackgroundColor="#0D1218" TextColor="#EFEFEF" Clicked="btnSeeComentaries_Clicked"></Button>
         </StackLayout>

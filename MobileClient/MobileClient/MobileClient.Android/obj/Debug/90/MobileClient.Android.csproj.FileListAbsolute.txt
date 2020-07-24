@@ -957,7 +957,6 @@ C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileCli
 C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\bin\Debug\MobileClient.Android.dll
-C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\bin\Debug\MobileClient.Android.pdb
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\bin\Debug\com.companyname.mobileclient.apk
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\bin\Debug\com.companyname.mobileclient.aab
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\bin\Debug\com.companyname.mobileclient-Signed.aab
@@ -998,7 +997,6 @@ C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClien
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\XamlC.stamp
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\MobileClient.Android.csproj.CopyComplete
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\MobileClient.Android.dll
-C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\MobileClient.Android.pdb
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\bin\com.companyname.mobileclient.apk
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\bin\base.zip
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\bin\com.companyname.mobileclient.aab
@@ -1030,7 +1028,6 @@ C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClien
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\FormsViewGroup.pdb
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\Java.Interop.dll
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\MobileClient.Android.dll
-C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\MobileClient.Android.pdb
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\Mono.Android.dll
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\Mono.Android.pdb
 C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClient\MobileClient.Android\obj\Debug\90\android\assets\Mono.Security.dll

@@ -7,7 +7,7 @@
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" Scale="0.9" Spacing="10">
             <Image Source="TitleBlue.png" VerticalOptions="Start" HorizontalOptions="Center" Scale="0.5"/>
-            <ListView x:Name="NotificationsList" HorizontalOptions="Center" 
+            <ListView x:Name="CommentsList" HorizontalOptions="Center" 
                       HasUnevenRows="True" 
                       SeparatorVisibility="None">
                 <ListView.ItemTemplate>

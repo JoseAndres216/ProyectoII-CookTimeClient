@@ -20,7 +20,7 @@ namespace CookTime.Model__Logic_
         [JsonProperty] public int rating;
         [JsonProperty] public bool isChef;
         [JsonProperty] public Data_Structures.Stack<string> notifications;
-        [JsonProperty] public SimpleList<User> followers;
+        [JsonProperty] public SimpleList<String> followers;
         [JsonProperty] public Data_Structures.Stack<Recipe> newsFeed;
         [JsonProperty] public MyMenu MyMenu;
         public string image = "StandartUserPic.png";
@@ -36,7 +36,7 @@ namespace CookTime.Model__Logic_
             this.newsFeed = new Stack<Recipe>();
             this.notifications = new Stack<string>();
             this.MyMenu = new MyMenu();
-            this.followers = new SimpleList<User>();
+            this.followers = new SimpleList<String>();
             this.rating = 0;
             this.isChef = false;
             

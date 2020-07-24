@@ -43,11 +43,6 @@ namespace CookTime.Views__UI_
             pckQuilification.SelectedItem = "Qualification";
         }
 
-        private void ImageButton_Clicked(object sender, EventArgs e)
-        {
-            this.Navigation.PopModalAsync();
-        }
-
         private async void btnShare_Clicked(object sender, EventArgs e)
         {
             try
@@ -117,6 +112,31 @@ namespace CookTime.Views__UI_
         private void btnSeeComentaries_Clicked(object sender, EventArgs e)
         {
             this.Navigation.PushModalAsync(new CommentSection(recipe));
+        }
+
+        private async void btnLike_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                HttpClient client = new HttpClient();
+                client.BaseAddress = new Uri(Client.HTTP_BASE_URL + "user/recipe/like?recipe=" + this.recipe.name + "&user=" + Client.getInstance().getUser().email);
+                var content = new StringContent("", Encoding.UTF8, "application/json");
+                HttpResponseMessage response = await client.PostAsync(client.BaseAddress, content);
+                Console.Out.Write(response.StatusCode.ToString());
+                if (response.ReasonPhrase.Equals("Accepted"))
+                {
+                    btnLike.Text = "Liked!";
+                    btnLike.IsEnabled = false;
+                }
+                else
+                {
+                    await DisplayAlert("Error", response.ReasonPhrase, "OK");
+                }
+            }
+            catch
+            {
+                await DisplayAlert("Error", "Something went wrong", "OK");
+            }
         }
     }
 }

@@ -53,6 +53,7 @@ namespace MobileClient.Model__Logic_
             this.price = price;
             this.rating = rating;
             this.likes = likes;
+            this.comments = new SimpleList<string>();
         }
 
         public void setName(string name)
@@ -174,5 +175,7 @@ namespace MobileClient.Model__Logic_
         {
             return this.image;
         }
+
+
     }
 }
