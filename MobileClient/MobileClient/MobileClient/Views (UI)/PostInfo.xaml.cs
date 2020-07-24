@@ -29,16 +29,16 @@ namespace CookTime.Views__UI_
             postPrice.Text = "- Suggested price $ " + recipe.price;
             postImage.Source = recipe.image;
 
-            pckQuilification.Items.Add("   1");
-            pckQuilification.Items.Add("   2");
-            pckQuilification.Items.Add("   3");
-            pckQuilification.Items.Add("   4");
-            pckQuilification.Items.Add("   5");
-            pckQuilification.Items.Add("   6");
-            pckQuilification.Items.Add("   7");
-            pckQuilification.Items.Add("   8");
-            pckQuilification.Items.Add("   9");
-            pckQuilification.Items.Add("   10");
+            pckQuilification.Items.Add("1");
+            pckQuilification.Items.Add("2");
+            pckQuilification.Items.Add("3");
+            pckQuilification.Items.Add("4");
+            pckQuilification.Items.Add("5");
+            pckQuilification.Items.Add("6");
+            pckQuilification.Items.Add("7");
+            pckQuilification.Items.Add("8");
+            pckQuilification.Items.Add("9");
+            pckQuilification.Items.Add("10");
 
             pckQuilification.SelectedItem = "Qualification";
         }
@@ -76,17 +76,15 @@ namespace CookTime.Views__UI_
         }
 
         private async void btnQualify_Clicked(object sender, EventArgs e)
-        {
+            {
             try
             {
                 int rate;
                 if (pckQuilification.SelectedItem.ToString() != "Qualification")
                 {
                     rate = Int16.Parse(pckQuilification.SelectedItem.ToString());
-                   
-
                     HttpClient client = new HttpClient();
-                    client.BaseAddress = new Uri(Client.HTTP_BASE_URL + "user/recipe/like?recipe=" + this.recipe.name + "&user=" + Client.getInstance().getUser().email);
+                    client.BaseAddress = new Uri(Client.HTTP_BASE_URL + "user/recipe/rate?recipe=" + this.recipe.name + "&user=" + Client.getInstance().getUser().email + "&rating= " + rate.ToString());
                     var content = new StringContent("", Encoding.UTF8, "application/json");
                     HttpResponseMessage response = await client.PostAsync(client.BaseAddress, content);
                     Console.Out.Write(response.StatusCode.ToString());
@@ -107,9 +105,9 @@ namespace CookTime.Views__UI_
                 }
                 
             }
-            catch
+            catch(Exception)
             {
-                await DisplayAlert("Error", "Something went wrong", "OK");
+                await DisplayAlert("Error", "Something went wrong" + "\n" , "OK");
             }
 
 
