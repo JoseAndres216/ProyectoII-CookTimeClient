@@ -2,15 +2,19 @@
 using CookTime.Model__Logic_.Data_Structures;
 using CookTime.ViewModel__Abstract_UI_;
 using MobileClient.Model__Logic_;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Net.Http;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace MobileClient.ViewModel__Abstract_UI_
 {
     public class MyEnterprisesRecomendationsVM
     {
         private SimpleList<Enterprise> myEnterprisesrecomendations { get; set; }
+        public List<Enterprise> myEnterpriserecomendationsIL;
 
         public MyEnterprisesRecomendationsVM()
         {
@@ -24,16 +28,25 @@ namespace MobileClient.ViewModel__Abstract_UI_
             return this.myEnterprisesrecomendations;
         }
 
-        public List<Enterprise> getMyenterpriseRecomendationsIL()
+        public async void getMyenterpriseRecomendationsFS()
         {
-            List<Enterprise> myEnterpriserecomendationsIL = new List<Enterprise>();
+            HttpClient client = new HttpClient();
+            client.BaseAddress = new Uri(Client.HTTP_BASE_URL + "/search/enterprises/suggest/ranked");
+            HttpResponseMessage response = await client.GetAsync(client.BaseAddress);
+            String json = response.Content.ReadAsStringAsync().Result;
+            myEnterprisesrecomendations = JsonConvert.DeserializeObject<SimpleList<Enterprise>>(json);
             Node<Enterprise> current = this.myEnterprisesrecomendations.getHead();
             while (current != null)
             {
                 myEnterpriserecomendationsIL.Add(current.getdata());
                 current = current.getNext();
             }
-            return myEnterpriserecomendationsIL;
+        }
+
+        public List<Enterprise> getMyenterpriseRecomendationsIL()
+        {
+            this.getMyenterpriseRecomendationsFS();
+            return this.myEnterpriserecomendationsIL;
         }
     }
 }

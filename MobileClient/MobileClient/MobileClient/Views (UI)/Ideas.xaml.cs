@@ -25,7 +25,7 @@ namespace MobileClient.Views__UI_
             MRRVM = new MyRecipesRecomendationsVM();
             MURVM = new MyUsersRecomendationsVM();
             MERVM = new MyEnterprisesRecomendationsVM();
-            RecommendationList.ItemsSource = MRRVM.getMyrecipesRecomendationsIL();
+            RecommendationList.ItemsSource = MRRVM.getMyrecipeRecomendationsIL();
         }
 
         private void RecommendationList_ItemTapped(object sender, ItemTappedEventArgs e)
@@ -48,7 +48,7 @@ namespace MobileClient.Views__UI_
             recipesButton.IsEnabled = false;
             usersButton.IsEnabled = true;
             companiesButton.IsEnabled = true;
-            RecommendationList.ItemsSource = MRRVM.getMyrecipesRecomendationsIL();
+            RecommendationList.ItemsSource = MRRVM.getMyrecipeRecomendationsIL();
         }
 
         private void usersButton_Clicked(object sender, EventArgs e)
@@ -56,7 +56,7 @@ namespace MobileClient.Views__UI_
             recipesButton.IsEnabled = true;
             usersButton.IsEnabled = false;
             companiesButton.IsEnabled = true;
-            RecommendationList.ItemsSource = MURVM.getUserMyrecomendationsIL();
+            RecommendationList.ItemsSource = MURVM.getMyuserRecomendationsIL();
         }
 
         private void companiesButton_Clicked(object sender, EventArgs e)

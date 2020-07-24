@@ -2,8 +2,10 @@
 using CookTime.Model__Logic_.Data_Structures;
 using CookTime.ViewModel__Abstract_UI_;
 using MobileClient.Model__Logic_;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Net.Http;
 using System.Text;
 
 namespace MobileClient.ViewModel__Abstract_UI_
@@ -11,6 +13,7 @@ namespace MobileClient.ViewModel__Abstract_UI_
     public class MyUsersRecomendationsVM
     {
         private SimpleList<User> myUsersrecomendations { get; set; }
+        public List<User> myUserrecomendationsIL;
 
         public MyUsersRecomendationsVM()
         {
@@ -24,16 +27,25 @@ namespace MobileClient.ViewModel__Abstract_UI_
             return this.myUsersrecomendations;
         }
 
-        public List<User> getUserMyrecomendationsIL()
+        public async void getMyuserRecomendationsFS()
         {
-            List<User> myRecomendationsIL = new List<User>();
+            HttpClient client = new HttpClient();
+            client.BaseAddress = new Uri(Client.HTTP_BASE_URL + "/search/users/suggest/ranked");
+            HttpResponseMessage response = await client.GetAsync(client.BaseAddress);
+            String json = response.Content.ReadAsStringAsync().Result;
+            myUsersrecomendations = JsonConvert.DeserializeObject<SimpleList<User>>(json);
             Node<User> current = this.myUsersrecomendations.getHead();
             while (current != null)
             {
-                myRecomendationsIL.Add(current.getdata());
+                myUserrecomendationsIL.Add(current.getdata());
                 current = current.getNext();
             }
-            return myRecomendationsIL;
+        }
+
+        public List<User> getMyuserRecomendationsIL()
+        {
+            this.getMyuserRecomendationsFS();
+            return this.myUserrecomendationsIL;
         }
     }
 }
