@@ -18,7 +18,7 @@
             </StackLayout>
             <ListView x:Name="RecommendationList" HorizontalOptions="Center"
                       ItemTapped="RecommendationList_ItemTapped"
-                      HasUnevenRows="True">
+                      HasUnevenRows="True"  PropertyChanged="RecommendationList_PropertyChanged">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

@@ -4,6 +4,7 @@ using MobileClient.Model__Logic_;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Net.Http;
 using System.Text;
 
@@ -12,7 +13,7 @@ namespace MobileClient.ViewModel__Abstract_UI_
     public class MyRecipesRecomendationsVM
     {
         private SimpleList<Recipe> myRecipesRecomendations { get; set; }
-        public List<Recipe> myReciperecomendationsIL;
+        public ObservableCollection<Recipe> myReciperecomendationsIL;
 
         public MyRecipesRecomendationsVM()
         {
@@ -28,6 +29,7 @@ namespace MobileClient.ViewModel__Abstract_UI_
 
         public async void getMyrecipeRecomendationsFS()
         {
+            this.myReciperecomendationsIL = new ObservableCollection<Recipe>();
             HttpClient client = new HttpClient();
             client.BaseAddress = new Uri(Client.HTTP_BASE_URL + "search/recipes/suggest/ranked");
             HttpResponseMessage response = await client.GetAsync(client.BaseAddress);
@@ -41,7 +43,7 @@ namespace MobileClient.ViewModel__Abstract_UI_
             }
         }
 
-        public List<Recipe> getMyrecipeRecomendationsIL()
+        public ObservableCollection<Recipe> getMyrecipeRecomendationsIL()
         {
             this.getMyrecipeRecomendationsFS();
             return this.myReciperecomendationsIL;

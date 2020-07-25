@@ -5,6 +5,7 @@ using MobileClient.Model__Logic_;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,8 +14,10 @@ namespace MobileClient.ViewModel__Abstract_UI_
 {
     public class MyEnterprisesRecomendationsVM
     {
+
         private SimpleList<Enterprise> myEnterprisesrecomendations { get; set; }
-        public List<Enterprise> myEnterpriserecomendationsIL;
+        public ObservableCollection<Enterprise> myEnterpriserecomendationsIL;
+        
 
         public MyEnterprisesRecomendationsVM()
         {
@@ -30,6 +33,7 @@ namespace MobileClient.ViewModel__Abstract_UI_
 
         public async void getMyenterpriseRecomendationsFS()
         {
+            this.myEnterpriserecomendationsIL = new ObservableCollection<Enterprise>();
             HttpClient client = new HttpClient();
             client.BaseAddress = new Uri(Client.HTTP_BASE_URL + "search/enterprises/suggest/ranked");
             HttpResponseMessage response = await client.GetAsync(client.BaseAddress);
@@ -43,7 +47,7 @@ namespace MobileClient.ViewModel__Abstract_UI_
             }
         }
 
-        public List<Enterprise> getMyenterpriseRecomendationsIL()
+        public ObservableCollection<Enterprise> getMyenterpriseRecomendationsIL()
         {
             this.getMyenterpriseRecomendationsFS();
             return this.myEnterpriserecomendationsIL;

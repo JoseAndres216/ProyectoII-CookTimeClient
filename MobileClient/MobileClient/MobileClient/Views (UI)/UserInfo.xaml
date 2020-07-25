@@ -11,7 +11,7 @@
             <Image Source="TitleBlue.png" Scale="0.5"/>
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="50">
                 <Image x:Name="userImage" HorizontalOptions="Center" WidthRequest="90" HeightRequest="90"/>
-                <Button x:Name="btnFollow" Text="Follow" TextColor="Black" FontSize="Medium" HorizontalOptions="Center" VerticalOptions="Center" Clicked="btnFollow_Clicked" CornerRadius="25"/>
+                <Button x:Name="btnFollow" Text="Follow" TextColor="Black" FontSize="Medium" HorizontalOptions="Center" VerticalOptions="Center" Clicked="btnFollow_ClickedAsync" CornerRadius="25"/>
             </StackLayout>
             <Label x:Name="userName" Text = "" TextColor="White" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/> 
             <Label Text="Recipes" TextColor="#EFEFEF" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>

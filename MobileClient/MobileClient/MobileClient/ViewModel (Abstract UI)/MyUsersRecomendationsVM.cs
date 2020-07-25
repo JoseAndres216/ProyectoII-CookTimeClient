@@ -5,6 +5,7 @@ using MobileClient.Model__Logic_;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Net.Http;
 using System.Text;
 
@@ -13,7 +14,7 @@ namespace MobileClient.ViewModel__Abstract_UI_
     public class MyUsersRecomendationsVM
     {
         private SimpleList<User> myUsersrecomendations { get; set; }
-        public List<User> myUserrecomendationsIL;
+        public ObservableCollection<User> myUserrecomendationsIL;
 
         public MyUsersRecomendationsVM()
         {
@@ -27,8 +28,9 @@ namespace MobileClient.ViewModel__Abstract_UI_
             return this.myUsersrecomendations;
         }
 
-        public async void getMyuserRecomendationsFS()
+        public async void GetMyuserRecomendationsFS()
         {
+            this.myUserrecomendationsIL = new ObservableCollection<User>();
             HttpClient client = new HttpClient();
             client.BaseAddress = new Uri(Client.HTTP_BASE_URL + "search/users/suggest/ranked");
             HttpResponseMessage response = await client.GetAsync(client.BaseAddress);
@@ -42,9 +44,9 @@ namespace MobileClient.ViewModel__Abstract_UI_
             }
         }
 
-        public List<User> getMyuserRecomendationsIL()
+        public ObservableCollection<User> getMyuserRecomendationsIL()
         {
-            this.getMyuserRecomendationsFS();
+            this.GetMyuserRecomendationsFS();
             return this.myUserrecomendationsIL;
         }
     }

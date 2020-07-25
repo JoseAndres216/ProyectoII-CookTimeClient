@@ -38,29 +38,34 @@ namespace MobileClient.Views__UI_
             else if (!usersButton.IsEnabled)
             {
                 var details = e.Item as User;
-                this.Navigation.PushModalAsync(new UserInfo(details.name, details.image));
+                this.Navigation.PushModalAsync(new UserInfo(details.name, details.image,details.email));
             }
 
         }
 
         private void recipesButton_Clicked(object sender, EventArgs e)
         {
+           
             recipesButton.IsEnabled = false;
             usersButton.IsEnabled = true;
             companiesButton.IsEnabled = true;
             RecommendationList.ItemsSource = MRRVM.getMyrecipeRecomendationsIL();
+         
         }
 
         private void usersButton_Clicked(object sender, EventArgs e)
         {
+    
             recipesButton.IsEnabled = true;
             usersButton.IsEnabled = false;
             companiesButton.IsEnabled = true;
             RecommendationList.ItemsSource = MURVM.getMyuserRecomendationsIL();
+            
         }
 
         private void companiesButton_Clicked(object sender, EventArgs e)
         {
+       
             recipesButton.IsEnabled = true;
             usersButton.IsEnabled = true;
             companiesButton.IsEnabled = false;
@@ -70,6 +75,11 @@ namespace MobileClient.Views__UI_
         private void btnSearch_Clicked(object sender, EventArgs e)
         {
             this.Navigation.PushModalAsync(new SearchPage());
+        }
+
+        private void RecommendationList_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+
         }
     }
 }
