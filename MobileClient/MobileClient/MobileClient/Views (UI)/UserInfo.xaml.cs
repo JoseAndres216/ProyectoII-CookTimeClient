@@ -26,7 +26,7 @@ namespace CookTime.Views__UI_
             vM = new UserMenuVM();
             userName.Text = name;
             userImage.Source = image;
-            MyMenuList.ItemsSource = vM.getUserMenuIL();
+            MyMenuList.ItemsSource = vM.getUserMenuIL(email);
         }
 
         private async void btnFollow_ClickedAsync(object sender, EventArgs e)
@@ -38,7 +38,7 @@ namespace CookTime.Views__UI_
                 var content = new StringContent("", Encoding.UTF8, "application/json");
                 HttpResponseMessage response = await client.PostAsync(client.BaseAddress, content);
                 Console.Out.Write(response.StatusCode.ToString());
-                if (response.ReasonPhrase.Equals("Accepted"))
+                if (response.ReasonPhrase.Equals("Created"))
                 {
                     btnFollow.Text = "User Followed!";
                     btnFollow.IsEnabled = false;

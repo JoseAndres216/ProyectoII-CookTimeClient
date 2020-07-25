@@ -79,7 +79,7 @@ namespace CookTime.Views__UI_
                 {
                     rate = Int16.Parse(pckQuilification.SelectedItem.ToString());
                     HttpClient client = new HttpClient();
-                    client.BaseAddress = new Uri(Client.HTTP_BASE_URL + "user/recipe/rate?recipe=" + this.recipe.name + "&user=" + Client.getInstance().getUser().email + "&rating= " + rate.ToString());
+                    client.BaseAddress = new Uri(Client.HTTP_BASE_URL + "user/recipe/rate?recipe=" + this.recipe.name + "&user=" + Client.getInstance().getUser().email + "&rating=" + rate.ToString());
                     var content = new StringContent("", Encoding.UTF8, "application/json");
                     HttpResponseMessage response = await client.PostAsync(client.BaseAddress, content);
                     Console.Out.Write(response.StatusCode.ToString());

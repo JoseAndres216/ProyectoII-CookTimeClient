@@ -21,9 +21,9 @@ namespace MobileClient.ViewModel__Abstract_UI_
             return this.userMenuVM;
         }
 
-        public List<Recipe> getUserMenuIL()
+        public List<Recipe> getUserMenuIL(String email)
         {
-            return Client.getInstance().getUserMenuIL();
+            return Client.getInstance().getUserMenuILAsync(email);
         }
     }
 }

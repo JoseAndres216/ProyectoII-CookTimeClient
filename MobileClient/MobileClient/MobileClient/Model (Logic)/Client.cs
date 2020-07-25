@@ -1,9 +1,12 @@
 ﻿using CookTime.Model__Logic_;
 using CookTime.Model__Logic_.Data_Structures;
 using MobileClient.Model__Logic_;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Net.Http;
 using System.Text;
+using Xamarin.Forms;
 
 namespace CookTime.ViewModel__Abstract_UI_
 {
@@ -17,6 +20,8 @@ namespace CookTime.ViewModel__Abstract_UI_
         private Enterprise enterprise = new Enterprise();
         public bool isUser = false;
         public bool isEnterprise = false;
+
+        public List<Recipe> UserMenu { get; private set; }
 
         private Client()
         {
@@ -51,13 +56,13 @@ namespace CookTime.ViewModel__Abstract_UI_
             }
             return instance;
         }
-    
+
         /*
          * Method for getting the user's feed, converted to a C# list, for updating the user's feed screen. 
          */
         public List<Recipe> getFeedIL()
         {
-            
+
             Model__Logic_.Data_Structures.SimpleList<Recipe> temp = this.user.getNewsfeed().getElements();
             List<Recipe> myMenuIL = new List<Recipe>();
             Node<Recipe> current = temp.getHead();
@@ -68,20 +73,33 @@ namespace CookTime.ViewModel__Abstract_UI_
             }
             return myMenuIL;
         }
-
-        public List<Recipe> getUserMenuIL()
+        public List<Recipe> getUserMenuILAsync(String email)
         {
-            Model__Logic_.Data_Structures.SimpleList<Recipe> temp = new SimpleList<Recipe>();
-            temp.setHead(new Node<Recipe>());
-            temp.getHead().setData(new Recipe("uno","dos"));
-            List<Recipe> UserMenu = new List<Recipe>();
-            Node<Recipe> current = temp.getHead();
-            while (current != null)
+            this.getUserMenuILAsyncAux(email);
+            return this.UserMenu;
+        }
+        public async void getUserMenuILAsyncAux(String email)
+        {
+            try
             {
-                UserMenu.Add(current.getdata());
-                current = current.getNext();
+                HttpClient client = new HttpClient();
+                client.BaseAddress = new Uri(Client.HTTP_BASE_URL + "user/menu/recent?user=" + email);
+                HttpResponseMessage response = await client.GetAsync(client.BaseAddress);
+                String json = response.Content.ReadAsStringAsync().Result;
+                SimpleList<Recipe> temp = JsonConvert.DeserializeObject<SimpleList<Recipe>>(json);
+                UserMenu = new List<Recipe>();
+
+                Node<Recipe> current = temp.getHead();
+                while (current != null)
+                {
+                    UserMenu.Add(current.getdata());
+                    current = current.getNext();
+                }
             }
-            return UserMenu;
+            catch
+            {
+
+            }
         }
     }
 }
