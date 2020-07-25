@@ -31,7 +31,7 @@ namespace MobileClient.ViewModel__Abstract_UI_
         public async void getMyenterpriseRecomendationsFS()
         {
             HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri(Client.HTTP_BASE_URL + "/search/enterprises/suggest/ranked");
+            client.BaseAddress = new Uri(Client.HTTP_BASE_URL + "search/enterprises/suggest/ranked");
             HttpResponseMessage response = await client.GetAsync(client.BaseAddress);
             String json = response.Content.ReadAsStringAsync().Result;
             myEnterprisesrecomendations = JsonConvert.DeserializeObject<SimpleList<Enterprise>>(json);

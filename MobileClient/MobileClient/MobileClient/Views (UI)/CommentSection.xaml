@@ -27,7 +27,7 @@
                                         <Label Grid.Row="0"
                                        Grid.Column="1"
                                        VerticalOptions="Start"
-                                       Text = "{Binding Path=.}"
+                                       Text = "{Binding Path = .}"
                                        TextColor="White"
                                        FontSize="Medium"/>
                                     </Grid>

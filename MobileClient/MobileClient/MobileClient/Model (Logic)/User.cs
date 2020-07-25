@@ -32,7 +32,6 @@ namespace CookTime.Model__Logic_
             this.password = password;
             this.name = name;
             this.age = age;
-
             this.newsFeed = new Stack<Recipe>();
             this.notifications = new Stack<string>();
             this.MyMenu = new MyMenu();

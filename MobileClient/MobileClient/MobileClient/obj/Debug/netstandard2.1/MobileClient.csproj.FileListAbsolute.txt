@@ -73,7 +73,6 @@ C:\Users\JoseAndresApps\Proyectos\CookTimeClient\Codigo\MobileClient\MobileClien
 C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\Ideas.xaml.g.cs
 C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\SearchPage.xaml.g.cs
 C:\Users\josue\Documents\GitHub\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\UserInfo.xaml.g.cs
-C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\MobileClient.csprojAssemblyReference.cache
 C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\App.xaml.g.cs
 C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\Create.xaml.g.cs
 C:\Users\eduar\Desktop\ProyectoII-CooktimeClient\MobileClient\MobileClient\MobileClient\obj\Debug\netstandard2.1\Views (UI)\CreateEnterprise.xaml.g.cs

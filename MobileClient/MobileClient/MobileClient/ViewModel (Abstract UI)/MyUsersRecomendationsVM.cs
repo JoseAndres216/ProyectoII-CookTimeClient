@@ -30,7 +30,7 @@ namespace MobileClient.ViewModel__Abstract_UI_
         public async void getMyuserRecomendationsFS()
         {
             HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri(Client.HTTP_BASE_URL + "/search/users/suggest/ranked");
+            client.BaseAddress = new Uri(Client.HTTP_BASE_URL + "search/users/suggest/ranked");
             HttpResponseMessage response = await client.GetAsync(client.BaseAddress);
             String json = response.Content.ReadAsStringAsync().Result;
             myUsersrecomendations = JsonConvert.DeserializeObject<SimpleList<User>>(json);

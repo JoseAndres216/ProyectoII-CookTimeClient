@@ -21,6 +21,8 @@ namespace CookTime.Views__UI_
         public CommentSection()
         {
             InitializeComponent();
+
+            //comments null
             Node<string> current = recipe.comments.getHead();
             List<string> commentsL = new List<string>();
             while(current != null)
